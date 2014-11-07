@@ -6,7 +6,54 @@
 html {
   box-sizing: border-box;
 }
+body {
+  width: 100%;
+  font-size: 13px;
+}
+a {
+  text-decoration: none;
+}
 .contain {
   width: 1170px;
   margin: 0 auto;
+}
+nav {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(16, 22, 54, 0.2);
+}
+nav p {
+  margin-left: 14px;
+  opacity: 0.3;
+}
+nav h3,
+nav p,
+nav li {
+  display: inline-block;
+}
+nav a {
+  color: #ffffff;
+}
+nav li {
+  padding-left: 33px;
+}
+nav #menu {
+  float: right;
+  list-style-type: none;
+}
+#logo {
+  font-family: "Pacifico";
+  font-size: 28px;
+  color: #ffffff;
+}
+#divider {
+  margin-right: 21px;
+  color: #32b0ee;
+}
+header {
+  height: 800px;
+  background-image: url(../images/header.png);
+  background-size: cover;
 }

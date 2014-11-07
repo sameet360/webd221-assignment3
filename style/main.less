@@ -14,6 +14,8 @@ html {
 }
 
 body {
+	width: @total-width;
+	font-size: @font-size-base;
 	// font-family: ;
 	// font-size: ;
 	// line-height: ;
@@ -21,7 +23,64 @@ body {
 	// background-color: @body-bg;
 }
 
+a {
+	text-decoration: none;
+}
+
+
+
 .contain {
-	width: 1170px;
+	width: @container-width;
 	margin: 0 auto;
 }
+
+nav {
+	display: inline-block;
+	position: absolute;
+	width: @total-width;
+	color: @bar-font-color;
+	background-color: @bar-color;
+
+	p {
+		margin-left: 14px;
+		opacity: 0.3;
+	}
+
+	h3, p, li {
+		display: inline-block;
+	}
+	a {
+		color: @bar-font-color;
+	}
+
+	li {
+		padding-left: 33px;
+	}
+
+	#menu {
+		float: right;
+		list-style-type: none;
+	}
+}
+
+#logo {
+	font-family: @logo-font;
+	font-size: 28px;
+	color: @bar-font-color;
+}
+
+#divider {
+	margin-right: 21px;
+	color: @cyan;
+}
+
+header {
+	height: 800px;
+	background-image: url(../images/header.png);
+	background-size: cover;
+
+
+}
+
+
+
