@@ -1,0 +1,27 @@
+//styles
+
+@import "variables.less";
+@import "mixins.less";
+
+//global styles
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	line-height: @line-height;
+	color: @text-color;
+	background-color: @body-bg;
+}
+
+.contain {
+	width: 1170px;
+	margin: 0 auto;
+}
