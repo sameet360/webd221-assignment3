@@ -10,6 +10,7 @@ body {
   width: 100%;
   font-family: "Open Sans", "Arial", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;
+  color: #062033;
 }
 h1,
 h2,
@@ -24,6 +25,22 @@ h1 {
 h2 {
   font-size: 47px;
   font-weight: 300;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0eb493;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #062033;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 h5 {
   font-size: 18px;
@@ -85,7 +102,7 @@ nav #menu {
   float: left;
 }
 header {
-  padding-top: 450px;
+  padding-top: 398px;
   height: 800px;
   background-image: url(../images/header.png);
   background-size: cover;
@@ -96,6 +113,29 @@ header h5 {
   display: inline-block;
   margin: 13px 16px;
   font-size: 18px;
+}
+header .pagination {
+  float: right;
+  margin-right: 5%;
+}
+header .pagination .circle {
+  margin: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  display: block;
+}
+header .pagination .circle:first-child,
+header .pagination .circle:hover {
+  background-color: #ffffff;
+  opacity: 1;
+}
+header .contain {
+  clear: both;
 }
 #highlight-text {
   color: #0eb493;
@@ -119,4 +159,69 @@ header h5 {
 }
 .social-links img:hover {
   opacity: 1;
+}
+#features {
+  padding: 49px 0;
+  background-color: #f4f7f9;
+}
+#features img {
+  width: 40px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+}
+#features article {
+  display: inline-block;
+  width: 83.9%;
+  font-size: 13px;
+}
+#features article p {
+  opacity: 0.7;
+}
+#features .pagination {
+  margin-top: 65px;
+  text-align: center;
+}
+#features .pagination .circle {
+  margin: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #062033;
+}
+#features .pagination .circle:first-child,
+#features .pagination .circle:hover {
+  background-color: #062033;
+  opacity: 1;
+}
+.feature-column {
+  margin-top: 65px;
+  width: 33%;
+  display: inline-block;
+  font-size: 0;
+}
+.shapes {
+  display: block;
+  text-align: center;
+}
+.fa-heart-o {
+  width: 20px;
+  display: inline-block;
+  -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-width: 1px;
+  text-stroke-width: 1px;
+  opacity: 0.2;
+  margin: auto 10px;
+}
+.main-lines {
+  display: inline-block;
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  border: none;
+  opacity: 0.1;
 }

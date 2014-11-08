@@ -17,6 +17,7 @@ body {
 	width: @total-width;
 	font-family: @main-font;
 	font-size: @font-size-base;
+	color: @text-color;
 
 }
 
@@ -33,6 +34,25 @@ h1 {
 h2 {
 	font-size: @font-size-h2;
 	font-weight: 300;
+
+}
+
+h3 {
+	font-size: @font-size-h3;
+	font-weight: 800;
+	color: @brand-color;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: -0.02em;
+	margin-bottom: 20px;
+}
+
+h4 {
+	margin: 0;
+	font-size: @font-size-h4;
+	color: @text-color;
+	font-weight: 600;
+	letter-spacing: -0.02em;
 }
 
 h5 {
@@ -117,8 +137,10 @@ nav {
 
 }
 
+// ========== header ==========
+
 header {
-	padding-top: 450px;
+	padding-top: 398px;
 	height: 800px;
 	background-image: url(../images/header.png);
 	background-size: cover;
@@ -128,6 +150,26 @@ header {
 		display: inline-block;
 		margin: 13px 16px;
 		font-size: 18px;
+	}
+
+	.pagination {
+		float: right;
+		margin-right: 5%;
+		.circle {
+			.circle();
+			border: 1px solid @bar-font-color;
+			display: block;
+
+			&:first-child,
+			&:hover {
+				background-color: @bar-font-color;
+				opacity: 1;
+			}
+		}
+	}
+
+	.contain {
+		clear: both;
 	}
 }
 
@@ -155,10 +197,91 @@ header {
 		&:hover {
 		opacity: 1;
 		}
+	}	
+}
+
+// ========== features ==========
+
+#features {
+	padding: 49px 0;
+	background-color: @bg-color;
+
+	 
+
+	 img {
+	 	width: 40px;
+	 	display: inline-block;
+	 	margin-right: 15px;
+	 	vertical-align: top;
+	 }
+	
+	article {
+		display: inline-block;
+		width: 83.9%;
+		font-size: @font-size-base;
+		p {
+			opacity: 0.7;
+		}
 	}
 
-	
+	.pagination {
+		margin-top: 65px;
+		text-align: center;
+
+		.circle {
+			.circle();
+
+			display: inline-block;
+			border: 1px solid @text-color;
+
+			&:first-child,
+			&:hover {
+				background-color: @text-color;
+				opacity: 1;
+			}
+		}
+	}
+
 }
+
+.feature-column {
+	margin-top: 65px;
+	width: 33%;
+	display: inline-block;
+	font-size: 0;
+}
+
+.shapes {
+	display: block;
+	text-align: center;
+}
+ 
+.fa-heart-o {
+	width: 20px;
+	display: inline-block;
+	-webkit-text-stroke-width: 1px;
+	-moz-text-stroke-width: 1px;
+	text-stroke-width: 1px;
+	opacity: 0.2;
+	margin: auto 10px;
+}
+
+.main-lines {
+	display: inline-block;
+	width: 90px;
+	height: 1px;
+	background-color: @text-color;
+	border: none;
+	opacity: 0.1;
+}
+
+// .pagination {
+// 	text-align: center;
+// 	margin-top: 55px;
+// }
+
+
+
 
 
 
