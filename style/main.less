@@ -53,11 +53,13 @@ h4 {
 	color: @text-color;
 	font-weight: 600;
 	letter-spacing: -0.02em;
+	text-align: center;
 }
 
 h5 {
 	font-size: @font-size-h5;
 	font-weight: 300;
+	text-align: center;
 }
 
 a {
@@ -205,9 +207,7 @@ header {
 #features {
 	padding: 49px 0;
 	background-color: @bg-color;
-
 	 
-
 	 img {
 	 	width: 40px;
 	 	display: inline-block;
@@ -275,11 +275,69 @@ header {
 	opacity: 0.1;
 }
 
-// .pagination {
-// 	text-align: center;
-// 	margin-top: 55px;
-// }
+#works {
+	padding: 90px 0;
+}
 
+#categories {
+	margin: 3% 0;
+	list-style: none;
+	text-align: center; 
 
+	a {
+		display: inline-block;
+		padding: 8px 24px;
+		text-decoration: none;
+		color: @dark;
+		font-weight: 700;
+    	}
+    a:hover {
+    	background: @mint;
+    	color: @white;
+    	-webkit-border-radius: 7px;
+    	-moz-border-radius: 7px;
+    	-o-border-radius: 7px;
+    }	
+	
+}
 
+#work-gallery {
+	li {
+		width: 25%;
+		float:left;
+		overflow:hidden;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+}
+	li img {
+	    max-width: 100%;
+		transition: all 300ms;
+		webkit-transistion: all 300ms;
+		-moz-transition:all 300ms;
+		display: block;
+	}
+}
 
+#team{
+	padding:0 0 30% 0;
+}
+
+#team-column {
+		 // width: 220px;	
+	 	display: inline-block;
+	 	float: left;
+	 	margin: 45px 22px 70px 0;
+	 	vertical-align: top;
+	 	text-align: center;
+	 
+	 img {
+	 	width: 220px;
+	 }
+	}
+
+#facts {
+	background-image: url(../images/funfacts_rectangle.png);
+	
+
+}
