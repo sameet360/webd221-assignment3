@@ -60,6 +60,7 @@ h5 {
 	font-size: @font-size-h5;
 	font-weight: 300;
 	text-align: center;
+	color: @dark;
 }
 
 a {
@@ -276,11 +277,13 @@ header {
 }
 
 #works {
-	padding: 90px 0;
+	padding: 59px 0;
+	background-color: @white;
 }
 
 #categories {
 	margin: 3% 0;
+	padding: 0;
 	list-style: none;
 	text-align: center; 
 
@@ -288,9 +291,11 @@ header {
 		display: inline-block;
 		padding: 8px 24px;
 		text-decoration: none;
-		color: @dark;
+		color: @blue-dark;
 		font-weight: 700;
-    	}
+		font-size: @font-size-base;
+    }
+
     a:hover {
     	background: @mint;
     	color: @white;
@@ -298,46 +303,229 @@ header {
     	-moz-border-radius: 7px;
     	-o-border-radius: 7px;
     }	
-	
 }
 
 #work-gallery {
-	li {
-		width: 25%;
-		float:left;
-		overflow:hidden;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-o-box-sizing: border-box;
-}
-	li img {
-	    max-width: 100%;
-		transition: all 300ms;
-		webkit-transistion: all 300ms;
-		-moz-transition:all 300ms;
-		display: block;
+	width: 100%;
+	list-style-type: none;
+	display: inline-block;
+	
+		img {
+			max-width: 25%;
+		    float: left;
+			transition: all 300ms;
+			webkit-transistion: all 300ms;
+			-moz-transition:all 300ms;
+			display: inline-block;
+		}
 	}
-}
 
 #team{
-	padding:0 0 30% 0;
+	padding: 45px 0;
 }
 
 #team-column {
-		 // width: 220px;	
-	 	display: inline-block;
-	 	float: left;
-	 	margin: 45px 22px 70px 0;
-	 	vertical-align: top;
-	 	text-align: center;
-	 
-	 img {
-	 	width: 220px;
-	 }
+	margin-top: 65px;
+	width: 23%;
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 28px;
+	 	
+	 	img {
+		 	width: 100%;
+		 	display: inline-block;
+		 	margin-right: 28px;
+		 	margin-bottom: 20px;
+		 	vertical-align: top;
+		 }
+	
+		h5, p {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			font-size: @dark;
+			font-weight: 400;			
+
+			p {
+				font-size: 13px;
+				width: 70%;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.pagination {
+		margin-top: 65px;
+		text-align: center;
+
+		.circle {
+			.circle();
+
+			display: inline-block;
+			border: 1px solid @text-color;
+
+			&:first-child,
+			&:hover {
+				background-color: @text-color;
+				opacity: 1;
+			}
+		}
 	}
 
 #facts {
-	background-image: url(../images/funfacts_rectangle.png);
-	
+	padding: 55px 0;
+	width: 100%;
+	height: 600px;
+	background: url(../images/funfacts_rectangle.png);
 
 }
+
+.facts-column {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+		
+	i {
+	 	width: 100%;
+	 	color: @white;
+	 	vertical-align: top;
+	}
+
+	h2 {
+		font-size: 60px;
+		color: @white;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	h5 {
+		color: @white;
+		text-transform: uppercase;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+#contact {
+	padding: 67px 0;
+}
+#contact-header {
+	margin-top: 85px;
+	display: inline-block;
+	//float: left;
+}
+
+#location {
+	float: left;
+	width: 28%;
+	//margin-top: 85px;
+
+	p {
+		font-size: 13px;
+		color: #6a737b;
+		line-height: 24px;
+		font-weight: 600;
+	}
+
+	h4 {
+		font-size: 18px;
+		color: @dark;
+		line-height: 32px;
+		text-align: left;
+	}
+}
+
+.form {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-right: 30px;
+	
+	h3 {
+		font-size: 24px;
+		text-align: left;
+		margin-top: 0;
+		color: @dark;
+		//float: left;
+		font-weight: 600;
+		//line-height: 24px;
+		text-transform: none;
+	}
+
+	input[type="text"] {
+		outline: none;
+		padding: 15px 0px;
+		width: 46%;
+		margin: 10px 10px 40px;
+		float: left;
+		outline: none;
+		border-bottom: 1px solid #E0E0E0;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	a {
+		padding: 80px 30px;
+		display: inline-block;
+		font-size: 16px;
+		color: #000;
+		float: right;
+	}
+}
+
+#soc-links {
+	margin-left: 0px;
+	float: right;
+	margin-top: 0;
+	width: 12%;
+
+}
+
+footer {
+	width: 100%;
+	padding: 85px 0;
+	background: @sea-green;
+}
+
+.footer-column:first-child {
+	display: block;
+	float: left;
+	width: 25%;
+	
+	h3 {
+		font-family: @logo-font;
+		text-transform: none;
+		color: @white;
+		text-align: left;
+	}
+}
+
+.footer-column:nth-child(2) {
+	width: 25%;
+	display: block;
+	float: left;
+}
+
+.footer-column:nth-child(3) {
+	width: 25%;
+	float: left;
+	display: inline-block;
+	
+	h6 {
+		text-align: left;
+		padding-left: 10px;
+	}
+	
+	li {
+		float: left;
+		padding-left: 25px;
+		width: 50%;
+	}
+
+ .footer-column:last-child {
+ 	width: 25%;
+ }
+}
+

@@ -47,6 +47,7 @@ h5 {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  color: #062033;
 }
 a {
   text-decoration: none;
@@ -228,10 +229,12 @@ header .contain {
   opacity: 0.1;
 }
 #works {
-  padding: 90px 0;
+  padding: 59px 0;
+  background-color: #ffffff;
 }
 #categories {
   margin: 3% 0;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
@@ -241,6 +244,7 @@ header .contain {
   text-decoration: none;
   color: #062033;
   font-weight: 700;
+  font-size: 13px;
 }
 #categories a:hover {
   background: #0eb493;
@@ -249,34 +253,195 @@ header .contain {
   -moz-border-radius: 7px;
   -o-border-radius: 7px;
 }
-#work-gallery li {
-  width: 25%;
-  float: left;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
+#work-gallery {
+  width: 100%;
+  list-style-type: none;
+  display: inline-block;
 }
-#work-gallery li img {
-  max-width: 100%;
+#work-gallery img {
+  max-width: 25%;
+  float: left;
   transition: all 300ms;
   webkit-transistion: all 300ms;
   -moz-transition: all 300ms;
-  display: block;
+  display: inline-block;
 }
 #team {
-  padding: 0 0 30% 0;
+  padding: 45px 0;
 }
 #team-column {
+  margin-top: 65px;
+  width: 23%;
   display: inline-block;
-  float: left;
-  margin: 45px 22px 70px 0;
-  vertical-align: top;
-  text-align: center;
+  font-size: 20px;
+  padding-left: 28px;
 }
 #team-column img {
-  width: 220px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 28px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+#team-column h5,
+#team-column p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: #062033;
+  font-weight: 400;
+}
+#team-column h5 p,
+#team-column p p {
+  font-size: 13px;
+  width: 70%;
+  font-weight: 600;
+}
+.pagination {
+  margin-top: 65px;
+  text-align: center;
+}
+.pagination .circle {
+  margin: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #062033;
+}
+.pagination .circle:first-child,
+.pagination .circle:hover {
+  background-color: #062033;
+  opacity: 1;
 }
 #facts {
-  background-image: url(../images/funfacts_rectangle.png);
+  padding: 55px 0;
+  width: 100%;
+  height: 600px;
+  background: url(../images/funfacts_rectangle.png);
+}
+.facts-column {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.facts-column i {
+  width: 100%;
+  color: #ffffff;
+  vertical-align: top;
+}
+.facts-column h2 {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+.facts-column h5 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+#contact {
+  padding: 67px 0;
+}
+#contact-header {
+  margin-top: 85px;
+  display: inline-block;
+}
+#location {
+  float: left;
+  width: 28%;
+}
+#location p {
+  font-size: 13px;
+  color: #6a737b;
+  line-height: 24px;
+  font-weight: 600;
+}
+#location h4 {
+  font-size: 18px;
+  color: #062033;
+  line-height: 32px;
+  text-align: left;
+}
+.form {
+  float: left;
+  width: 70%;
+  text-align: center;
+  padding-right: 30px;
+}
+.form h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-top: 0;
+  color: #062033;
+  font-weight: 600;
+  text-transform: none;
+}
+.form input[type="text"] {
+  padding: 15px 0px;
+  width: 46%;
+  margin: 10px 10px 40px;
+  float: left;
+  outline: none;
+  border-bottom: 1px solid #E0E0E0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.form a {
+  padding: 80px 30px;
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  float: right;
+}
+#soc-links {
+  margin-left: 0px;
+  float: right;
+  margin-top: 0;
+  width: 12%;
+}
+footer {
+  width: 100%;
+  padding: 85px 0;
+  background: #21b697;
+}
+.footer-column:first-child {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.footer-column:first-child h3 {
+  font-family: "Pacifico";
+  text-transform: none;
+  color: #ffffff;
+  text-align: left;
+}
+.footer-column:nth-child(2) {
+  width: 25%;
+  display: block;
+  float: left;
+}
+.footer-column:nth-child(3) {
+  width: 25%;
+  float: left;
+  display: inline-block;
+}
+.footer-column:nth-child(3) h6 {
+  text-align: left;
+  padding-left: 10px;
+}
+.footer-column:nth-child(3) li {
+  float: left;
+  padding-left: 25px;
+  width: 50%;
+}
+.footer-column:nth-child(3) .footer-column:last-child {
+  width: 25%;
 }
