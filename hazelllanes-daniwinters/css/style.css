@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font: 13px "PT Sans", Myriad, Myriad Pro, Helvetica, Arial, sans-serif;
+  line-height: 26px;
+  background: #515f67;
+  color: #ffffff;
+  font-weight: normal;
+}
+header {
+  display: inline-block;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  background: url('../img/header.jpg') no-repeat;
+  height: 800px;
+}
+#topbar {
+  display: inline-block;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  height: 150px;
+  background-color: #353f46;
+}
+#topbar nav {
+  float: right;
+}
+#topbar nav ul {
+  margin: 0;
+}
+#topbar nav ul li {
+  display: inline-block;
+}
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section {
+  display: inline-block;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+#services,
+#portfolio,
+#about,
+#default,
+#twitter,
+#testimonials,
+#contact {
+  width: 100%;
+}
+@media (max-width: 940px) {
+  
+}
+@media (max-width: 767px) {
+  
+}
+@media (max-width: 480px) {
+  
+}
