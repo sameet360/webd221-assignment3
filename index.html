@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-	<nav id="top-nav">
+	<nav>
 		<div class="contain">
 			<a id="logo" href="#">Brandi</a>
 			<p><span id="divider"></span>I'm your tag line</p>
@@ -22,8 +22,8 @@
 				<li><a href="#">Works</a></li>
 				<li><a href="#">Team</a></li>
 				<li><a href="#">Contact</a></li>
-			</ul><!-- /#menu -->
-		</div><!-- /.contain -->
+			</ul>
+		</div><!-- /contain -->
 	</nav>
 
 	<header id="header">
@@ -31,14 +31,9 @@
 			<i class="circle"></i>
 			<i class="circle"></i>
 			<i class="circle"></i>
-		</div><!-- /.pagination -->
-		<div class="contain">
-			<!-- <ul id="pagination">
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul> --><!-- /.pagination -->
+		</div><!-- /pagination -->
 
+		<div class="contain">
 			<h1>Meet <b>Brandi</b>!</h1>
 			<h2><span id="highlight-text">/creative</span> one page template.</h2>
 			<hr class="header-lines"><h5>We are a team of professionals</h5><hr class="header-lines">
@@ -48,57 +43,56 @@
 				<img src="images/facebook.png" alt="facebook social icon">
 				<img src="images/google.png" alt="google plus social icon">
 				<img src="images/dribbble.png" alt="dribble social icon">
-			</div><!-- /.social-links -->
-		</div><!-- /.contain -->
-
-	</header><!-- /#header -->
+			</div><!-- /social-links -->
+		</div><!-- /contain -->
+	</header>
 	
-
 	<section id="features">
 		<div class="contain">
 			<h3>features</h3>
 			<div class="shapes">
 				<hr class="main-lines"><i class="fa fa-heart-o"></i><hr class="main-lines">				
-			</div><!-- /.shapes -->			
+			</div><!-- /shapes -->			
 
 			<div class="feature-column">
-				<img src="images/feather.png" alt="feather icon">
+				<span><img src="images/feather.png" alt="feather icon"></span>
 				<article>
 					<h4>Branding</h4>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
 				</article>
-			</div><!-- /.feature-column -->
+			</div><!-- /feature-column -->
 
 			<div class="feature-column">
-				<img src="images/pencil.png" alt="pencil icon">
+				<span><img src="images/pencil.png" alt="pencil icon"></span>
 				<article>
 					<h4>Development</h4>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
 				</article>
-			</div><!-- /.feature-column -->
+			</div><!-- /feature-column -->
 
 			<div class="feature-column">
-				<img src="images/megaphone.png" alt="megaphone icon">
+				<span><img src="images/megaphone.png" alt="megaphone icon"></span>
 				<article>
 					<h4>Consulting</h4>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
 				</article>
-			</div><!-- /.feature-column -->
+			</div><!-- /feature-column -->
+			<div style="clear: both;"></div> <!-- clear floats technique-->
 
 			<div class="pagination">
 				<i class="circle"></i>
 				<i class="circle"></i>
 				<i class="circle"></i>
-			</div><!-- /.pagination -->
-		</div><!-- /.contain -->		
-	</section><!-- /#features -->
+			</div><!-- /pagination -->
+		</div><!-- /contain -->		
+	</section><!-- /features -->
 
 	<section id="works">
 		<div class="contain">
 			<h3>works</h3>
 			<div class="shapes">
-				<hr class="main-lines"><i class="fa fa-heart-o"></i><hr class="main-lines">				
-			</div><!-- /.shapes -->
+				<hr class="main-lines"><i class="fa fa-heart-o"></i><hr class="main-lines">		
+			</div><!-- /shapes -->
 			<h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</h5>
 
 			<div id="categories">
@@ -107,25 +101,77 @@
 				<a href="">Web</a>
 				<a href="">Logo Design</a>
 				<a href="">Photography</a>				
-			</div><!-- /.categories -->
-		</div><!-- /.contain -->
+			</div><!-- /categories -->
+		</div><!-- /contain -->
 
-		<ul id="work-gallery">
-			<li><img src="images/image1.png" alt=""></li>
-			<li><img src="images/image2.png" alt=""></li>
-			<li><img src="images/image2.jpg" alt="">
-				<!-- <div id="label">
+		<ul class="work-gallery">
+			<li>
+				<img class="work-tile" src="images/image1.png" alt="">
+				<a href="#" class="gallery-link">
 					<img src="images/eye-icon.png" alt=""/>
-					<p>Lorem ipsum dolor sit amet.<br><span>Photography</span></p>
-				</div> -->
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
 			</li>
-			<li><img src="images/image4.png" alt=""></li>
-			<li><img src="images/image5.png" alt=""></li>
-			<li><img src="images/image6.png" alt=""></li>
-			<li><img src="images/image7.png" alt=""></li>
-			<li><img src="images/image8.png" alt=""></li>
-		</ul><!-- /#work-gallery -->
-	</section><!-- /#works -->
+			<li>
+				<img class="work-tile" src="images/image2.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+			<li>
+				<img class="work-tile" src="images/image2.jpg" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+			<li>
+				<img class="work-tile" src="images/image4.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+
+			<li>
+				<img class="work-tile" src="images/image5.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+			<li>
+				<img class="work-tile" src="images/image6.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+			<li>
+				<img class="work-tile" src="images/image7.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+			<li>
+				<img class="work-tile" src="images/image8.png" alt="">
+				<a href="#" class="gallery-link">
+					<img src="images/eye-icon.png" alt=""/>
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Photography</p>
+				</a><!-- /gallery-link -->
+			</li>
+		</ul><!-- /work-gallery -->
+	</section><!-- /works -->
 
 	<section id="team">
 		<div class="contain">

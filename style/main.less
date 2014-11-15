@@ -1,9 +1,9 @@
-// ========== import less files ==========
+// ------------- import less files -------------
 
 @import "variables.less";
 @import "mixins.less";
 
-// ========== global styles ==========
+// ------------- global styles -------------
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -18,7 +18,6 @@ body {
 	font-family: @main-font;
 	font-size: @font-size-base;
 	color: @text-color;
-
 }
 
 h1, h2, h5 {
@@ -34,7 +33,6 @@ h1 {
 h2 {
 	font-size: @font-size-h2;
 	font-weight: 300;
-
 }
 
 h3 {
@@ -67,35 +65,37 @@ a {
 	text-decoration: none;
 }
 
-
-
 .contain {
 	width: 	@container-width;
 	margin: 0 auto;
 }
 
-// ========== navigation ==========
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+// ------------- navigation -------------
 
 nav {
 	height: 70px;
 	position: absolute;
-	width: 	@total-width;
+	width: @total-width;
 	color: @bar-font-color;
 	background-color: @bar-color;
 	letter-spacing: 0.05em;
  
-
 	p {
 		float: left;
-		// margin-left: 14px;
 		opacity: 0.3;
 		font-weight: 300;
 		padding-top: 18px;
 	}
 
-	h3, p, li {
-		// display: inline-block;
-	}
+
 	a {
 		color: @bar-font-color;
 	}
@@ -115,8 +115,6 @@ nav {
 		display: inline;
 		float: right;
 		list-style-type: none;
-		
-
 	}
 }
 
@@ -140,24 +138,20 @@ nav {
 
 }
 
-// ========== header ==========
+// ------------- header -------------
 
 header {
-	padding-top: 398px;
-	height: 800px;
+	padding-top: 28.154em;
+	height: 61.538em;
 	background-image: url(../images/header.png);
 	background-size: cover;
 	color: @bar-font-color;
 	text-align: center;
-	h5 {
-		display: inline-block;
-		margin: 13px 16px;
-		font-size: 18px;
-	}
 
 	.pagination {
 		float: right;
 		margin-right: 5%;
+
 		.circle {
 			.circle();
 			border: 1px solid @bar-font-color;
@@ -174,6 +168,14 @@ header {
 	.contain {
 		clear: both;
 	}
+
+	h5 {
+		display: inline-block;
+		margin: 13px 16px;
+		font-size: 18px;
+		color: @bar-font-color;
+	}	
+
 }
 
 #highlight-text {
@@ -192,21 +194,23 @@ header {
 }
 
 .social-links {
-	margin-top: 9.8vh;
+	margin-top: 8.692em;
+
 	img {
 		margin-left: 12px;
 		opacity: 0.3;
 
 		&:hover {
-		opacity: 1;
+			cursor: pointer;
+			opacity: 1;
 		}
 	}	
 }
 
-// ========== features ==========
+// ------------- features -------------
 
 #features {
-	padding: 49px 0;
+	padding: 3.769em 0;
 	background-color: @bg-color;
 	 
 	 img {
@@ -216,45 +220,37 @@ header {
 	 	vertical-align: top;
 	 }
 	
-	article {
-		display: inline-block;
-		width: 83.9%;
-		font-size: @font-size-base;
-		p {
-			opacity: 0.7;
-		}
-	}
-
 	.pagination {
-		margin-top: 65px;
+		margin-top: 5.000em;
 		text-align: center;
-
-		.circle {
-			.circle();
-
-			display: inline-block;
-			border: 1px solid @text-color;
-
-			&:first-child,
-			&:hover {
-				background-color: @text-color;
-				opacity: 1;
-			}
-		}
 	}
 
-}
+	.circle {
+		.circle();
 
-.feature-column {
-	margin-top: 65px;
-	width: 33%;
-	display: inline-block;
-	font-size: 0;
+		display: inline-block;
+		border: 1px solid @text-color;
+
+		&:first-child,
+		&:hover {
+			background-color: @text-color;
+			opacity: 1;
+		}
+	}
 }
 
 .shapes {
 	display: block;
 	text-align: center;
+}
+
+.main-lines {
+	display: inline-block;
+	width: 90px;
+	height: 1px;
+	background-color: @text-color;
+	border: none;
+	opacity: 0.1;
 }
  
 .fa-heart-o {
@@ -267,33 +263,55 @@ header {
 	margin: auto 10px;
 }
 
-.main-lines {
-	display: inline-block;
-	width: 90px;
-	height: 1px;
-	background-color: @text-color;
-	border: none;
-	opacity: 0.1;
+.feature-column {
+	margin-top: 5.000em;
+	width: 33.3%;
+	float: left;
+
+	span {
+		width: 15.52%;
+	}
+
+	article {
+		display: inline-block;
+		width: 75.6%;
+		font-size: @font-size-base;
+		word-break: break-all;
+
+		h4 {
+			text-align: left;
+		}
+
+		p {
+			opacity: 0.7;
+		}
+	}
 }
 
+// ------------- works -------------
+
 #works {
-	padding: 59px 0;
-	background-color: @white;
+	padding: 3.769em 0 0 0;
+	overflow: hidden;
+
+	.contain h5 {
+		.bold();
+		opacity: 0.8;
+		width: 81%;
+	}
 }
 
 #categories {
-	margin: 3% 0;
+	margin: 3.769em 3% 2.846em 0;
 	padding: 0;
 	list-style: none;
 	text-align: center; 
 
 	a {
-		display: inline-block;
-		padding: 8px 24px;
-		text-decoration: none;
+		padding: 9px 21px;
 		color: @blue-dark;
 		font-weight: 700;
-		font-size: @font-size-base;
+		font-size: @font-size-base + 1;
     }
 
     a:hover {
@@ -305,20 +323,69 @@ header {
     }	
 }
 
-#work-gallery {
-	width: 100%;
+.work-gallery {
+	width: @total-width;
 	list-style-type: none;
-	display: inline-block;
+	padding-left: 0;
+	float: left;
 	
-		img {
-			max-width: 25%;
-		    float: left;
-			transition: all 300ms;
-			webkit-transistion: all 300ms;
-			-moz-transition:all 300ms;
-			display: inline-block;
+	li {
+		display: block;
+		width: 25%;
+		float: left;
+		position: relative;
+
+		a {
+			display: block;
+			padding: 25% 10%;
+			position: absolute;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			background: rgba(14, 180, 147, 0.9);
+			text-align: center;
+			color: @white;
+			opacity: 0;
+
+			&:hover {
+				opacity: 1;
+				-webkit-transition: opacity 0.25s ease-in-out;
+				-moz-transition: opacity 0.25s ease-in-out;
+				-o-transition: opacity 0.25s ease-in-out;
+				transition: opacity 0.25s ease-in-out;
+			}
+
+			img {
+				display: block;
+				width: 3.077em;
+				margin: 0 auto;
+			}
+
+			h5 {
+				.bold();
+				color: @white;
+				opacity: 1;
+			}
+
+			p {
+				font-size: @font-size-base + 1;
+			}
 		}
 	}
+	
+	.work-tile {
+		width: 100%;
+	    float: left;
+	    &:hover	{
+	    	cursor: pointer;
+	    	z-index: 3;
+			
+			background-color: @brand-color;
+		}
+	}
+}
+
+// ------------- team -------------
 
 #team{
 	padding: 45px 0;
@@ -355,7 +422,7 @@ header {
 	}
 
 	.pagination {
-		margin-top: 65px;
+		//margin-top: 65px;
 		text-align: center;
 
 		.circle {
