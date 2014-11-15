@@ -1,0 +1,643 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: 'pt_sansregular';
+  color: #fff;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blue {
+  color: #4bcaff;
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.fullleft {
+  display: inline;
+  float: left;
+  width: 97.5%;
+  margin: 0 1.25%;
+}
+h3 {
+  font-size: 30px;
+  padding-top: 80px;
+}
+.line {
+  border-bottom: 2px solid;
+  width: 45px;
+  margin: 2px 0 35px 0;
+}
+h5 {
+  font-size: 28px;
+  line-height: 50px;
+}
+.lefthalf {
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+}
+.righthalf {
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+}
+.nav li {
+  display: inline-block;
+  float: right;
+}
+.nav li:first-of-type {
+  margin-right: 0;
+}
+.nav li a {
+  text-decoration: none;
+  padding: 10px 20px 6px 20px;
+  font-size: 14px;
+  margin-right: 9px;
+  border: solid 2px transparent;
+}
+nav {
+  background-color: rgba(68, 78, 85, 0.85);
+}
+nav h1 {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+nav ul {
+  display: inline;
+  float: left;
+  width: 72.5%;
+  margin: 0 1.25%;
+  margin-top: 65px;
+}
+nav ul a {
+  color: #fff;
+}
+nav ul a:hover {
+  color: #4bcaff;
+  border: solid 2px;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  -moz-transition: 400ms all;
+  -o-transition: 400ms all;
+}
+nav .fa-bars {
+  display: none;
+}
+header {
+  background: url('../images/headerbg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+header h2 {
+  display: inline;
+  float: left;
+  width: 97.5%;
+  margin: 0 1.25%;
+  font-size: 42px;
+  line-height: 75px;
+  text-align: center;
+  margin-top: 250px;
+}
+header h2:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 255px;
+}
+header .highlight {
+  background: #4a555c;
+  padding: 10px 25px 0 25px;
+  opacity: .8;
+}
+#services {
+  background-color: #4bcaff;
+}
+#services article {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+}
+#services article img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+}
+#services h4 {
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+#services p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 75px;
+}
+#portfolio {
+  color: #515f67;
+}
+#portfolio .left {
+  display: inline;
+  float: left;
+  width: 14.166666666666666%;
+  margin: 0 1.25%;
+}
+#portfolio .right {
+  display: inline;
+  float: left;
+  width: 80.83333333333333%;
+  margin: 0 1.25%;
+}
+#portfolio .right .nav {
+  margin-top: 90px;
+}
+#portfolio .right .nav li {
+  text-decoration: none;
+  padding: 10px 20px 6px 20px;
+  font-size: 14px;
+  margin-right: 9px;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+#portfolio .right .nav li.active {
+  color: #4bcaff;
+  border: solid 2px;
+}
+#portfolio .fa-bars {
+  display: none;
+}
+#portfolio article {
+  margin-bottom: 80px;
+}
+#portfolio .slides {
+  margin-top: 20px;
+}
+#portfolio .slides li {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+  margin-top: 25px;
+}
+#portfolio .target {
+  overflow: hidden;
+  position: relative;
+}
+#portfolio .target__caption {
+  position: absolute;
+  width: 100%;
+}
+#features {
+  background-color: #515f67;
+}
+#features .leftfloat {
+  display: inline;
+  float: left;
+  width: 39.166666666666664%;
+  margin: 0 1.25%;
+}
+#features p:first-of-type {
+  margin-bottom: 25px;
+}
+#features p:last-of-type {
+  margin-top: 45px;
+  margin-bottom: 85px;
+}
+#features aside {
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+  float: right;
+  margin-top: 80px;
+}
+#features a {
+  text-decoration: none;
+  border: solid 2px;
+  margin-bottom: 80px;
+  padding: 15px 41px 10px 41px;
+  color: #353f46;
+}
+#features a:hover {
+  background: #888;
+  -webkit-transition: 600ms all;
+  transition: 600ms all;
+  -moz-transition: 600ms all;
+  -o-transition: 600ms all;
+}
+#twitter {
+  background-color: #4bcaff;
+}
+#twitter i {
+  margin-top: 80px;
+  float: right;
+}
+#twitter h5 {
+  margin-bottom: 65px;
+}
+#whois {
+  background: url("../images/photobg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#whois .lefthalf p:last-of-type {
+  margin-bottom: 175px;
+}
+#whois p:first-of-type {
+  margin-bottom: 25px;
+}
+#whois a {
+  color: #fff;
+}
+#whois i {
+  padding: 12px 13px 10px 13px;
+  border: solid 2px;
+  margin-right: 15px;
+}
+#whois i:hover {
+  background: #4bcaff;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  -moz-transition: 400ms all;
+  -o-transition: 400ms all;
+}
+#test {
+  color: #515f67;
+}
+#test .righthalf {
+  width: 35px;
+  float: right;
+  margin-top: 80px;
+}
+#test p {
+  color: #4bcaff;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+#contact {
+  background: url("../images/contactbg.jpg");
+  background-size: cover;
+}
+#contact .righthalf {
+  margin-top: 15px;
+  float: right;
+}
+#contact label {
+  font-size: 14px;
+}
+#contact input,
+#contact textarea {
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-top: 5px;
+  font-size: 24px;
+  color: #fff;
+}
+#contact input {
+  margin-bottom: 40px;
+  height: 60px;
+  width: 100%;
+}
+#contact textarea {
+  height: 220px;
+  width: 100%;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-bottom: 42px;
+  margin-left: 0;
+}
+#contact .btn {
+  width: 370px;
+  height: 60px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #4bcaff;
+  border-style: none;
+  margin-bottom: 80px;
+}
+#contact .btn:hover {
+  background: #fff;
+  color: #4bcaff;
+  -webkit-transition: 800ms all;
+  transition: 800ms all;
+  -moz-transition: 800ms all;
+  -o-transition: 800ms all;
+}
+#contact ul {
+  margin-top: 40px;
+}
+footer {
+  background-color: #353f47;
+  color: #515f67;
+  font-size: 12px;
+}
+footer ul {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+footer ul li {
+  display: inline-block;
+  border-right: 2px #515f67 solid;
+  padding-right: 12px;
+  margin-right: 10px;
+}
+footer ul li:last-of-type {
+  border-right: none;
+}
+footer ul li a {
+  color: #515f67;
+  text-decoration: none;
+}
+footer h6 {
+  float: right;
+  margin-top: 80px;
+}
+@media (max-width: 960px) {
+  header h2 {
+    font-size: 28px;
+    line-height: 55px;
+  }
+  .nav li a {
+    margin-right: 0;
+  }
+  #features .leftfloat {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #features aside {
+    display: inline;
+    float: left;
+    width: 64.16666666666667%;
+    margin: 0 1.25%;
+    margin-bottom: 65px;
+    margin-left: 18%;
+  }
+  #features p:last-of-type {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 24px;
+    line-height: 45px;
+  }
+  h3 {
+    padding-top: 50px;
+    font-size: 24px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .dropdown.open {
+    display: block;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  nav ul {
+    margin-top: 30px;
+  }
+  nav .nav li {
+    display: block;
+    float: none;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  nav .nav li:first-of-type {
+    margin-right: 50px;
+  }
+  nav .nav li a {
+    font-size: 18px;
+  }
+  nav .fa-bars {
+    display: block;
+    margin-top: 55px;
+    margin-right: 80px;
+    float: right;
+  }
+  #services article {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #services article h4 {
+    font-size: 20px;
+  }
+  #services article p:last-of-type {
+    margin-bottom: 50px;
+  }
+  #portfolio .line {
+    margin-top: 2px;
+  }
+  #portfolio .left {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio .right {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio .right .nav {
+    margin-top: 0;
+  }
+  #portfolio .right .nav li {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #portfolio article {
+    margin-bottom: 60px;
+  }
+  #portfolio .slides {
+    margin-top: 10px;
+  }
+  #portfolio .slides li {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+    margin-top: 25px;
+  }
+  #twitter i,
+  #test .righthalf {
+    margin-top: 50px;
+  }
+  #whois .lefthalf {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #whois .lefthalf p:last-of-type {
+    margin-bottom: 25px;
+  }
+  #whois .righthalf {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #whois i {
+    margin-bottom: 50px;
+  }
+  footer .righthalf {
+    display: inline;
+    float: left;
+    width: 14.166666666666666%;
+    margin: 0 1.25%;
+  }
+  footer .lefthalf {
+    display: inline;
+    float: left;
+    width: 80.83333333333333%;
+    margin: 0 1.25%;
+  }
+}
+@media (max-width: 480px) {
+  nav .nav li {
+    margin-right: 15px;
+  }
+  nav .nav li:first-of-type {
+    margin-right: 15px;
+  }
+  nav .fa-bars {
+    margin-right: 40px;
+  }
+  .container {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  header h2 {
+    font-size: 20px;
+    line-height: 45px;
+    margin-top: 100px;
+  }
+  header h2:nth-child(2) {
+    margin-bottom: 100px;
+  }
+  header h2 .highlight {
+    padding: 10px 5px 0 5px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #services .center {
+    text-align: center;
+  }
+  #services article {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio .slides {
+    margin-top: 0;
+  }
+  #portfolio .slides li {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+    margin-top: 10px;
+  }
+  #portfolio .selection {
+    display: none;
+  }
+  #portfolio .selection.open {
+    display: block;
+  }
+  #portfolio .left {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio .right {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio .right .fa-bars {
+    display: block;
+    margin: 45px 30px 25px 0;
+    float: right;
+  }
+  #portfolio .right .nav {
+    clear: both;
+  }
+  #portfolio .right .nav li {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    clear: both;
+  }
+  #features aside {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+    margin-bottom: 65px;
+  }
+  #features p:last-of-type {
+    text-align: center;
+  }
+  #twitter h5,
+  #test p {
+    margin-bottom: 45px;
+  }
+  #whois i {
+    margin-right: 3px;
+  }
+  #contact .righthalf {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+    margin-bottom: 35px;
+  }
+  #contact .lefthalf {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #contact .btn {
+    width: 170px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  footer ul li {
+    padding-right: 4px;
+    margin-right: 5px;
+  }
+}
