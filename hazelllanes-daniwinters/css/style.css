@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .clearfix:after {
   content: "";
@@ -18,20 +19,11 @@ body {
   font-weight: normal;
 }
 header {
-  display: inline-block;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
   background: url('../img/header.jpg') no-repeat;
   height: 800px;
 }
 #topbar {
-  display: inline-block;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
   height: 150px;
-  background-color: #353f46;
 }
 #topbar nav {
   float: right;
@@ -42,26 +34,47 @@ header {
 #topbar nav ul li {
   display: inline-block;
 }
+#topbar h1 a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#topbar h1 a .brightE {
+  color: #4bcaff;
+}
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
 }
-section {
-  display: inline-block;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
+section,
+header,
+footer {
+  width: 100%;
 }
 #services,
+#twitter {
+  background-color: #4bcaff;
+}
 #portfolio,
-#about,
-#default,
-#twitter,
-#testimonials,
+#testimonials {
+  background-color: #ffffff;
+  color: #515f67;
+}
+#topbar,
+footer {
+  background-color: #353f46;
+}
+#about {
+  background: url('../img/about.jpg') no-repeat;
+  background-size: cover;
+  height: 505px;
+}
 #contact {
-  width: 100%;
+  background: url('../img/contact.jpg') no-repeat;
+  background-size: cover;
+  height: 815px;
 }
 @media (max-width: 940px) {
   

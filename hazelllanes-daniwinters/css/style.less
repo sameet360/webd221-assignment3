@@ -10,6 +10,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .clearfix:after {
@@ -26,23 +27,16 @@ body {
   font-weight: normal;
 }
 
-// TYPOGRAPHY
-//------------------------------------
-
-
 // HEADER
 //------------------------------------
 
 header {
-  .column(12);
   background: url('../img/header.jpg')no-repeat;
   height: 800px;
 }
 
 #topbar { 
-  .column(12);
   height: 150px;
-  background-color: @blue-grey-dark;
 
   nav { 
     float: right;
@@ -52,6 +46,13 @@ header {
       display: inline-block;
       }
     }
+  }
+
+  h1 a { 
+    color: @white;
+    text-transform: uppercase;
+    font-weight: 400;
+    .brightE { color: @blue; }
   }
 }
 
@@ -65,12 +66,35 @@ header {
   overflow: hidden; // self-clear floated child elements
 }
 
-section {
-  .column(12);
+section, header, footer {
+  width: 100%;
 }
 
-#services, #portfolio, #about, #default, #twitter, #testimonials, #contact {
-  width: 100%;
+#services, #twitter { 
+  background-color: @blue; 
+}
+#portfolio, #testimonials { 
+  background-color: @white; 
+  color: @blue-grey;
+}
+#topbar, footer { background-color: @blue-grey-dark; }
+
+// About
+//----------------------------
+
+#about {
+  background: url('../img/about.jpg') no-repeat; 
+  background-size: cover;
+  height: 505px;
+}
+
+// Contact
+//----------------------------
+
+#contact { 
+  background: url('../img/contact.jpg') no-repeat; 
+  background-size: cover;
+  height: 815px;
 }
 
 
