@@ -245,8 +245,9 @@
 		<script>
 			$(document).ready(function(){
 				$(".fa-bars").on("click", function(){
-					$(".dropdown").toggleClass("open");
-				});
+					$(".dropdown").toggleClass("open", 1000);
+            		return false;
+        		});
 			});
 		</script>
 </html>
