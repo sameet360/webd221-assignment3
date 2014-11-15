@@ -1,0 +1,100 @@
+@import "variables.less";
+@import "mixins.less";
+
+// GLOBAL
+//------------------------------------
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font: @base-font-size @font;
+  line-height: 26px;
+  background: @blue-grey;
+  color: @white;
+  font-weight: normal;
+}
+
+// TYPOGRAPHY
+//------------------------------------
+
+
+// HEADER
+//------------------------------------
+
+header {
+  .column(12);
+  background: url('../img/header.jpg')no-repeat;
+  height: 800px;
+}
+
+#topbar { 
+  .column(12);
+  height: 150px;
+  background-color: @blue-grey-dark;
+
+  nav { 
+    float: right;
+    ul {
+      margin: 0;
+      li {
+      display: inline-block;
+      }
+    }
+  }
+}
+
+// SECTIONS
+//------------------------------------
+
+.container {
+  width: @total-width;
+  max-width: @gridsystem-width;
+  margin: 0 auto;
+  overflow: hidden; // self-clear floated child elements
+}
+
+section {
+  .column(12);
+}
+
+#services, #portfolio, #about, #default, #twitter, #testimonials, #contact {
+  width: 100%;
+}
+
+
+// MEDIA QUERIES 
+//----------------------------
+// Portrait tablet and small desktops
+@media (max-width: 940px) {
+
+}
+
+// Landscape phone to portrait tablet
+@media (max-width: 767px) {
+
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+
+}
+
+
+
+
+
+
+
+
