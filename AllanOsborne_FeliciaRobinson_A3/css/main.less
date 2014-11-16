@@ -1,0 +1,637 @@
+@import "variables.less";
+@import "mixins.less";
+
+// GLOBAL STYLES
+//----------------------------------------------------------
+
+// Fixes Box Model sizing issues
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+html {
+  color: white;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//Use this to force clear floated child elements
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	margin: 0; // resets default space
+	padding: 0;
+	background: @bodyColor;
+	font-family: 'Oswald', sans-serif;
+}
+
+// remove default list styles
+
+
+ul { 
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	  a {
+	  	text-decoration: none;
+		}
+	}
+
+}
+
+
+
+//img {
+//	width: 100%;
+//}
+
+
+.container {
+	width: @total-width;
+//	max-width: @gridsystem-width;
+	margin: 0 auto;
+	overflow: hidden; // self-clear floated child elements
+}
+
+
+
+//SHARED STYLES 
+//----------------------------------------------------------
+
+nav {
+	//width: 60%;
+	float: right;
+
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	a {
+		padding: 10px;
+  	}
+}
+
+.underline {
+  text-decoration: underline;
+
+}
+
+h1 {
+  font-weight: normal;
+}
+
+
+header, section, footer {
+	width: 100%;
+}
+
+// HEADER 
+//----------------------------------------------------------
+
+header {	
+	background: url(../img/heroImg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 15%;
+	//padding: 15% 0;
+
+	h1 {
+      .column(12);
+	  	font-size: 2.5em;
+//	  	width: 52%;		 
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+	  	margin-bottom: 20px;
+	}
+	#mainNav {
+
+	  a:hover {
+		border: 1px solid #00c0ff;
+		color: #00c0ff;
+	  }
+	  background-color: rgba(73, 84, 91, 0.84);
+	  padding: 3%;
+
+	}
+  
+    .logo {
+      float:left;
+    }
+  
+    nav li a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;    
+    }
+  	#bottomHeader {
+	  padding: 15% 0;
+  	}
+
+}
+
+//SERVICES
+//----------------------------------------------------------
+
+#services {
+	background: #00c0ff;
+  	padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px
+  }
+}
+
+.svc-col {
+	.column(3);
+}
+
+//PORTFOLIO
+//----------------------------------------------------------
+
+#portfolio {
+  color: #515F67;
+  padding: 60px 0;
+}
+.portfolio-nav{
+  	nav	{
+	  float: right;
+	  ul {
+		margin: -40px -130px 50px -50px;
+	  }
+	  li {
+		 padding: 3%;
+		a {
+		  color: #515F67;
+		}
+	  }
+	  .selected a {
+		border: 2px solid #00C0ff;
+		color: #00C0ff;
+		padding: 10px 20px;
+	  }
+	}
+  h1 {
+	   .column(12);
+	 }
+
+}
+
+.portfolio-list {
+	.column(12);
+}
+.portfolioBar {
+  img {
+	.column(3);
+	padding: 10px 0;
+	&:hover {
+	  .column(3);
+	  cursor: pointer;
+	  background: url(../img/p-hover.png) no-repeat;
+  	}
+  }
+}
+
+//FEATURES
+//----------------------------------------------------------
+
+#features {
+	background: #515f67;
+  padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px;
+  }
+  button {
+	border: 1px solid #515f67;
+	color: #515f67;
+	padding: 15px 40px;
+	font-size: 15px;
+	margin-top: 30px;
+  }
+
+}
+
+article {
+	.column(6);	
+}
+
+
+aside {
+	.column(6);
+  img {
+	width: 100%
+  }
+} 
+
+
+//FEATURES
+//----------------------------------------------------------
+
+#twitter {
+	background: #4bcaff;
+  	padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px;
+  }
+  img {
+	float: right;
+	margin-top: -75px;
+  }
+  p {
+	.column(12);
+  }
+}
+
+
+
+//WHO IS
+//----------------------------------------------------------
+
+#who-is {
+	background-image: url(../img/whois.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+//	background-attachment: fixed;
+  	padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px
+  }
+  .who-is-left {
+	.column(6);
+	float: left;
+  }
+  .who-is-right {
+	.column(6);
+	float: right;
+  }
+  .social {
+	li {
+	  display: inline;
+	  padding: 10px;
+	}
+	img {
+	  border: 1px solid white;
+	}
+  }
+	
+}
+
+//TESTIMONIALS
+//----------------------------------------------------------
+
+#testimonials {
+  color: #515F67;
+  padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px;
+  }
+  #author {
+  	color: #00C0FF;
+	font-size: 10pt;
+  }
+  img {
+	float: right;
+	margin-top: -75px;
+  }
+  blockquote {
+	.column(12);
+  }
+}
+
+
+//CONTACT
+//----------------------------------------------------------
+
+#contact {
+	background-image: url(../img/footerImg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+//	background-attachment: fixed;
+  padding: 60px 0;
+  h1 {
+	.column(12);
+	padding-bottom: 30px;
+  }
+  label {
+	font-size: 12px;
+  }
+  p {
+	font-size: 12px;
+  }
+	.form-left {
+	  .column(6);
+	  label {
+		.column(6);
+		display: block;
+	  }
+	  input {
+		.column(6);
+		width: 90%;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		background: none;
+		border: 2px solid white;
+	  }
+	}
+  	.form-bottom {
+	  label {
+		.column(12);
+		margin-left: 20px;
+
+	  }
+	  textarea {
+		width: 95%;
+		padding-bottom: 75px;
+		margin: 0 20px;
+		background: none;
+		border: 2px solid white;
+	  }
+	  input {
+		.column(4);
+		margin: 20px 0 0 20px;
+		padding: 20px 0;
+		color: white;
+		background-color: #4BCAFF;
+		border: 1px solid #4BCAFF;
+	  }
+  	}
+}
+
+
+// FOOTER
+//----------------------------------------------------------
+
+#footer-bottom {
+  clear: both;
+   background-color: #353F47;
+   font-size: 14px;
+
+  ul {
+	margin: 40px 0 0 20px;
+	color: #515f67;
+	li {
+	  display: inline;
+	  a {
+		color: #515f67;
+	  }
+	}
+  }
+  p {
+	float: right;
+	margin-bottom: 50px;
+	margin-right: 30px;
+	font-size: 14px;
+	color: #515f67;
+  }
+}
+
+//----------------------------
+// MEDIA QUERIES
+//----------------------------
+// Portrait tablet and small desktops
+@media (max-width: 940px) {
+  // nav { background: pink; }
+
+  header {
+	.logo {
+	  .column(6);
+	  margin-left: 25%;
+	}
+	#mainNav {
+	  background-color: rgba(255, 84, 91, 0.84);
+	  nav {
+		.column(12);
+		text-align: center;
+	  }
+	}
+	#bottomHeader {
+	  font-size: 15px;
+	}
+  }
+
+  .svc-col {
+	.column(6);
+  }
+
+  .portfolio-nav{
+	nav {
+	  margin-left: -50px;
+	  ul {
+		margin: -40px 0 50px 0;
+		li {
+		  padding: 0;
+		  padding-top: 5%;
+		}
+	  }
+	}
+  }
+
+  #who-is {
+	.who-is-left {
+	  .column(6);
+	}
+	.who-is-right {
+	  .column(6);
+	}
+  }
+
+}
+
+// Landscape phone to portrait tablet
+@media (max-width: 767px) {
+  // nav { background: lightgreen; }
+  header {
+	#mainNav {
+	  background-color: rgba(0, 255, 91, 0.84);
+	}
+	#bottomHeader {
+	  font-size: 12px;
+	  padding: 30% 0;
+	  padding-top: 15%;
+	}
+  }
+
+  .svc-col {
+	.column(6);
+  }
+
+  .portfolio-nav {
+	nav {
+	  float: none;
+	  .column(12);
+	  ul {
+		text-align: center;
+		padding: 25px 0;
+		margin-left: -100px;
+		.column(12);
+		li {
+		  padding: 1%;
+	  	}
+	  }
+	  h1 {
+		.column(12);
+		display: block;
+		background-color: black;
+		text-align: center;
+	  }
+	}
+  }
+
+  .portfolioBar {
+	img {
+	  .column(6);
+	  &:hover {
+		.column(6);
+	  }
+	}
+  }
+
+  #who-is {
+	.who-is-left {
+	  .column(12);
+	  float: none;
+	}
+	.who-is-right {
+	  .column(12);
+	  float: none;
+	}
+	.social {
+	  text-align: center;
+	  padding-top: 30px;
+	}
+  }
+
+
+
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+  // nav { background: lightblue; }
+
+  header {
+	#mainNav {
+	  background-color: rgba(255, 255, 255, 0.84);
+	}
+	#bottomHeader {
+	  font-size: 10px;
+	  padding: 30% 0;
+	  padding-top: 10%;
+	}
+  }
+
+  .svc-col {
+	.column(12);
+  }
+
+  .portfolio-nav {
+	nav {
+	  float: none;
+	  .column(12);
+	  ul {
+		text-align: center;
+		padding: 25px 0;
+		margin-left: -100px;
+		.column(12);
+		li {
+		  padding: 1%;
+		  padding-bottom: 30px;
+		}
+	  }
+	  h1 {
+		.column(12);
+		display: block;
+		background-color: black;
+		text-align: center;
+	  }
+	}
+  }
+
+  .portfolioBar {
+	img {
+	  .column(12);
+	  &:hover {
+		.column(12);
+	  }
+	}
+  }
+
+  #features {
+	article {
+	  .column(12);
+	}
+	aside {
+	  .column(12);
+	}
+  }
+
+  #contact {
+	h1 {
+	  .column(12);
+	  padding-bottom: 30px;
+	}
+	label {
+	  font-size: 12px;
+	}
+	p {
+
+	  font-size: 18px;
+	}
+	.form-left {
+	  .column(6);
+	  label {
+		.column(6);
+		display: block;
+		font-size: 14px;
+	  }
+	  input {
+		.column(6);
+		width: 90%;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		background: none;
+		border: 2px solid white;
+	  }
+	}
+	.form-bottom {
+	  label {
+		.column(12);
+		font-size: 14px;
+
+	  }
+	  textarea {
+		.column(12);
+		padding-bottom: 75px;
+		background: none;
+		border: 2px solid white;
+	  }
+	  input {
+		.column(4);
+		margin: 20px 0 0 20px;
+		padding: 20px 0;
+		color: white;
+		background-color: #4BCAFF;
+		border: 1px solid #4BCAFF;
+	  }
+	}
+  }
+
+}
+
+
+
+
