@@ -5,6 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
+  outline: 0;
 }
 .clearfix:after {
   content: "";
@@ -16,7 +17,15 @@ body {
   line-height: 26px;
   background: #515f67;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+nav {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 h3 {
   display: inline-block;
@@ -24,16 +33,15 @@ h3 {
   width: 97.5%;
   margin: 0 1.25%;
   font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
+  line-height: normal;
   padding: 0 0 8px 0;
   margin-bottom: 40px;
 }
 h3.light {
-  background: url('../img/deco-line.gif') no-repeat 0px 32px;
+  background: url('../img/deco-line.gif') no-repeat 0 40px;
 }
 h3.dark {
-  background: url('../img/deco-line2.gif') no-repeat 0px 32px;
+  background: url('../img/deco-line2.gif') no-repeat 0 40px;
 }
 ul {
   padding: 0;
@@ -41,9 +49,6 @@ ul {
 }
 ul li {
   display: inline-block;
-}
-nav {
-  text-transform: uppercase;
 }
 a {
   color: #ffffff;
@@ -72,12 +77,9 @@ footer {
 footer {
   background-color: #353f46;
 }
-.header {
-  text-align: center;
-  padding: 245px 0;
-}
 header {
   background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
 }
 #topbar {
   background-color: rgba(53, 63, 70, 0.8);
@@ -94,6 +96,9 @@ header {
   padding: 15px 30px;
   display: inline-block;
 }
+#topbar nav a:hover {
+  color: #4bcaff;
+}
 #topbar nav a.current {
   color: #4bcaff;
   border: 2px #4bcaff solid;
@@ -106,7 +111,6 @@ header {
 #topbar h1 a {
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 400;
 }
 #topbar h1 a .brightE {
   color: #4bcaff;
@@ -117,10 +121,16 @@ h2 {
   text-transform: uppercase;
   background-color: rgba(53, 63, 70, 0.8);
   font-size: 38px;
-  font-weight: 400;
   line-height: 2em;
   letter-spacing: 1px;
   padding: 10px 20px;
+}
+nav .fa-bars {
+  display: none;
+}
+.header {
+  text-align: center;
+  padding: 245px 0;
 }
 #services ul {
   display: inline-block;
@@ -135,9 +145,9 @@ h2 {
   font-size: 12px;
   line-height: 20px;
 }
-#services ul li span {
+#services ul li h4 {
   font-size: 24px;
-  text-transform: uppercase;
+  line-height: normal;
 }
 #portfolio h3 {
   display: inline-block;
@@ -157,6 +167,9 @@ h2 {
   color: #515f67;
   padding: 10px 20px;
 }
+#portfolio nav a:hover {
+  color: #4bcaff;
+}
 #portfolio nav a.current {
   border: 2px #4bcaff solid;
   padding: 5px 15px;
@@ -171,7 +184,32 @@ h2 {
   float: left;
   width: 22.5%;
   margin: 0 1.25%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25%;
+}
+.gallerypic {
+  position: relative;
+  display: block;
+}
+.gallerypic .zoom-icon {
+  background-color: rgba(53, 63, 70, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  font-size: 60px;
+  text-align: center;
+  opacity: 0;
+  padding: 45% 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallerypic:hover .zoom-icon {
+  opacity: 1;
+}
+.gallerypic img {
+  width: 100%;
 }
 #default p {
   margin-bottom: 35px;
@@ -214,11 +252,22 @@ h2 {
   background: url('../img/about.jpg') no-repeat;
   background-size: cover;
 }
+#about nav {
+  margin-top: 37px;
+  font-size: 30px;
+}
 #about ul li {
+  margin: 0 10px 0 0;
+}
+#about ul li a {
   border: 2px #ffffff solid;
   padding: 15px 18px;
-  font-size: 30px;
-  margin: 0 20px 0 0;
+  color: #ffffff;
+}
+#about ul li a:hover {
+  color: #4bcaff;
+  border: 2px #4bcaff solid;
+  padding: 15px 18px;
 }
 .col {
   display: inline-block;
@@ -250,33 +299,72 @@ h2 {
   background: url('../img/contact.jpg') no-repeat;
   background-size: cover;
 }
-label {
+.inputwrap {
+  padding: 0;
+  border: 0;
+}
+.contact-1 {
+  display: inline-block;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+  float: right;
+}
+.contact-1 li {
   display: block;
+}
+.contact-2 {
+  display: inline-block;
+  float: left;
+  width: 39.166666666666664%;
+  margin: 0 1.25%;
+}
+.contact-3 {
+  display: inline-block;
+  float: left;
+  width: 97.5%;
+  margin: 0 1.25%;
+}
+button {
+  display: inline-block;
+  float: left;
+  width: 30.833333333333336%;
+  margin: 0 1.25%;
+  background-color: #4bcaff;
+  padding: 15px 160px;
+  border: none;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #353f46;
+}
+label {
+  width: 100%;
   text-align: left;
+  text-transform: uppercase;
 }
 input,
 textarea {
   background-color: transparent;
   border: 2px solid #ffffff;
-  padding: 5px;
-  display: inline-block;
-  float: left;
-  width: 47.5%;
-  margin: 0 1.25%;
+  width: 100%;
+  margin: 0 0 30px 0;
+  padding: 20px 10px;
 }
-button {
-  background-color: #4bcaff;
-  padding: 25px 160px;
-  border: none;
-  text-transform: uppercase;
+footer,
+footer a {
+  color: #515f67;
+  font-size: 12px;
 }
 footer ul {
   margin: 0;
+  display: inline-block;
+  float: left;
+  width: 72.5%;
+  margin: 0 1.25%;
 }
 footer ul li {
   display: inline-block;
-  color: #515f67;
-  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -287,12 +375,212 @@ footer ul li:after {
 footer ul li:last-child:after {
   content: "";
 }
+.copyright {
+  display: inline-block;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+  text-align: right;
+}
 @media (max-width: 940px) {
-  
+  .container {
+    padding: 40px 15px;
+  }
+  #topbar .container {
+    padding: 60px 15px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .header {
+    padding: 145px 0;
+  }
+  #default-copy {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #vid {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+    margin-top: 50px;
+  }
+  #portfolio h3 {
+    display: inline-block;
+    float: left;
+    width: 30.833333333333336%;
+    margin: 0 1.25%;
+  }
+  #portfolio nav {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio nav ul {
+    margin: 20px 0;
+  }
+  #gallery {
+    margin-top: 0;
+  }
+  #gallery li {
+    display: inline-block;
+    float: left;
+    width: 22.5%;
+    margin: 0 1.25%;
+    margin-bottom: 1.25%;
+  }
+  #vid img {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
-  
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    margin: 50px;
+  }
+  #topbar nav a {
+    padding: 10px;
+  }
+  #topbar nav a.current {
+    padding: 5px 10px;
+  }
+  #twitter p,
+  #testimonials p {
+    font-size: 21px;
+    line-height: 40px;
+  }
+  #about nav {
+    font-size: 20px;
+  }
+  #about nav ul li {
+    margin: 0;
+  }
+  #portfolio h3 {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio nav {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #portfolio nav a {
+    padding: 5px 10px;
+  }
+  #gallery li {
+    display: inline-block;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+    margin-bottom: 1.25%;
+  }
+  #services ul {
+    display: inline-block;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #services ul li {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 @media (max-width: 480px) {
-  
+  .container {
+    padding: 30px 15px;
+  }
+  .col,
+  #gallery li {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+    margin-bottom: 1.25%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  #about nav ul li {
+    padding: 0;
+    margin: 3px;
+  }
+  #twitter p,
+  #testimonials p {
+    font-size: 21px;
+    line-height: 35px;
+  }
+  #topbar {
+    height: auto;
+  }
+  #topbar nav .fa-bars {
+    margin: 0 auto;
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+  #topbar nav ul.dropdown {
+    display: none;
+    text-align: left;
+  }
+  #topbar nav ul.dropdown li {
+    display: block;
+    margin: 10px;
+  }
+  #topbar nav ul.dropdown a {
+    color: white;
+    border: none;
+  }
+  #topbar nav ul.dropdown a:hover {
+    color: #4bcaff;
+    font-weight: 400;
+  }
+  #topbar nav ul.dropdown.open {
+    display: block;
+  }
+  #topbar nav a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  #topbar nav h1 {
+    padding: 25px;
+  }
+  #services ul {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  .contact-1,
+  .contact-2 {
+    display: inline-block;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    margin: 0 0 10px 0;
+  }
+  button {
+    width: 100%;
+    padding: 15px 50px;
+  }
+}
+@media (max-width: 320px) {
+  #services ul {
+    color: #fff;
+  }
 }
