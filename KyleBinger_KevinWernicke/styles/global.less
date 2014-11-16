@@ -1,0 +1,170 @@
+.container {
+	max-width:@gridsystem-width;
+	margin: 0 auto;
+	padding: 0 4% 0 4%;
+}
+
+// Fixes Box Model sizing issues
+html {
+  box-sizing: border-box;
+  color: @main-font-color;
+}
+
+// Fixes padding and margin
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//Use this to force clear floated child elements
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+	width: 100%;
+}
+
+//HEADER FONTS
+//---------------------------------------
+h1 {
+	font-family: @light;
+}
+
+h2 {
+	font-family: @extrabold;
+	font-size: 28px;
+	color: @green;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-family: @semibold;
+}
+
+h4 {
+	font-family: @logo-font;
+	font-size: 28px;
+	color: #fff;
+}
+
+h5 {
+	font-family: @bold;
+}
+
+h6 {
+	font-family: @light;
+	font-size: 13px;
+}
+
+p {
+	font-family: @paragraph-font;
+	font-size: 13px;
+	line-height: 25px;
+	color: @main-font-opacity;
+}
+
+a {
+	text-decoration: none;
+	color: @main-font-color;
+}
+
+li {
+	font-size: 13px;
+	display: inline;
+}
+
+// GLOBAL STYLES --- HEART STYLE/HOVER EFFECTS
+//--------------------------------------------
+.heart {
+
+	color: rgba(6, 32, 51, .2);
+	overflow: hidden;
+
+	&:before,
+	&:after {
+		background-color: rgba(6, 32, 51, .1);
+	    content: "";
+	    display: inline-block;
+	    height: 1px;
+	    position: relative;
+	    vertical-align: middle;
+	    width: 90px;
+	}
+
+	&:before {
+		right: 15px;
+    	margin-left: -50%;
+	}
+
+	&:after {
+		left: 15px;
+    	margin-right: -50%;
+	}
+}
+
+section,
+#funfacts {
+
+	&:hover {
+		.heart {
+			color: rgb(255,105,180);
+			transition: color .5s ease-in-out;
+		}
+	}
+}
+
+//GLOBAL STYLES --- SLIDER VERTICAL/HORIZONTAL/HOVER
+//-------------------------------------
+.circle:hover .fa-circle-o:before {
+	content: "\f111";
+	color: #fff;
+	transition: color .2s ease-in-out;
+}
+//FIX
+.sliderVertical {
+	margin-top: 300px;
+	text-align: right;
+	margin-right: 47px;
+
+	li {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.fa-circle-o {
+		color: rgba(255, 255, 255, .2);
+	}
+}
+
+.sliderHorizontal {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	.fa-circle-o {
+		color: rgba(0, 0, 0, .2);
+	}
+
+	.circle:hover .fa-circle-o:before {
+		color: #000;
+	}
+}
+
+//GLOBAL STYLES --- OTHER STYLES
+//-------------------------------------
+
+.title {
+	text-align: center;
+	padding: 80px 0 40px 0;
+
+	h3 { 
+		font-size: 18px;
+		color: @main-font-opacity;
+		margin: 40px 0 65px 0;
+	}
+}
