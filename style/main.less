@@ -384,6 +384,7 @@ header {
 // ------------- team -------------
 
 #team{
+	.section();
 	padding: 45px 0;
 
 	.pagination {
@@ -412,27 +413,25 @@ header {
 	text-align: center;
 	position: relative;
 
-		a {
-			width: 100%;
-			float: left;
+	a {
+		width: 100%;
+		float: left;
 
-			&:hover > h5 {
-				color: @brand-color;
-			}		
-		}
-	 	
-	 	img {
-		 	width: 100%;
-		 	float: left;
-		 }
-	
-		h5 {
-			margin-top: 1.2em;
-			color: @dark;
-			font-weight: 400;	
-		}
+		&:hover > h5 {
+			color: @brand-color;
+		}		
+	}
+ 	
+ 	img {
+	 	width: 100%;
+	 	float: left;
+	 }
 
-		
+	h5 {
+		margin-top: 1.2em;
+		color: @dark;
+		font-weight: 400;	
+	}
 }
 
 .team-photo {
@@ -489,8 +488,8 @@ header {
 // ------------- facts -------------
 
 #facts {
+	.section();
 	padding: 4.231em 0;
-	width: 100%;
 	height: 46.154em;
 	background: url(../images/funfacts_rectangle.png) no-repeat;
 	background-size: cover;
@@ -509,7 +508,6 @@ header {
 .facts-column {
 	margin-top: 1.77em;
 	width: 25%;
-	display: inline-block;
 	float: left;
 	text-align: center;
 
@@ -518,103 +516,133 @@ header {
 	}
 
 	h2 {
-		margin-top:0.5em;
+		margin-top: 0.5em;
 		font-size: 4.615em;
 		color: @white;
 		font-weight: 500;
-		text-align: center;
 	}
 
 	h5 {
-
 		color: @white;
 		text-transform: uppercase;
 		font-weight: 400;
-		text-align: center;
 	}
 }
 
 // ------------- contact -------------
 
 #contact {
-	padding: 67px 0;
+	.section();
+	padding: 4.231em 0 5.5em 0;
 }
+
 #contact-header {
-	margin-top: 85px;
-	display: inline-block;
-	//float: left;
+	width: 100%;
+	margin-top: 6.538em;
+	float: left;
 }
 
 #location {
 	float: left;
-	width: 28%;
-	//margin-top: 85px;
-
-	p {
-		font-size: 13px;
-		color: #6a737b;
-		line-height: 24px;
-		font-weight: 600;
-	}
+	width: 25.65%;
+	padding-right: 4.231em;
+	color: @dark-grey;
+	line-height: 1.846em;
 
 	h4 {
-		font-size: 18px;
-		color: @dark;
-		line-height: 32px;
+		margin-bottom: 1.818em;
+		font-size: @font-size-h4 + 2;
+		font-weight: 400;
+		line-height: 1.455em;
 		text-align: left;
 	}
 }
 
 .form {
 	float: left;
-	width: 70%;
+	width: 68.37%;
 	text-align: center;
 	padding-right: 30px;
 	
 	h3 {
-		font-size: 24px;
+		font-size: @font-size-h3 - 4;
 		text-align: left;
 		margin-top: 0;
 		color: @dark;
-		//float: left;
 		font-weight: 600;
-		//line-height: 24px;
 		text-transform: none;
 	}
 
 	input[type="text"] {
-		outline: none;
-		padding: 15px 0px;
-		width: 46%;
-		margin: 10px 10px 40px;
+		margin-top: 1.2em;
+		padding: 1.154em 0px;
 		float: left;
 		outline: none;
+		border: none;
 		border-bottom: 1px solid #E0E0E0;
-		border-top: none;
-		border-left: none;
-		border-right: none;
+	}
+
+	input[placeholder]:focus::-webkit-input-placeholder, {
+		transition: opacity 0.2s 0.2s ease; 
+		opacity: 0;
+	}
+
+	input[placeholder]:focus::-moz-input-placeholder, {
+		transition: opacity 0.2s 0.2s ease; 
+		opacity: 0;
+	}
+
+	#form-name {
+		width: 48.18%;
+		margin-right: 3.89%
+	}
+
+	#form-email {
+		width: 47.92%;
+	}
+
+	#form-message {
+		margin-top: 2.308em;
+		width: 100%;
 	}
 
 	a {
-		padding: 80px 30px;
-		display: inline-block;
-		font-size: 16px;
-		color: #000;
+		margin-top: 2.313em;
+		font-size: @font-size-base + 3;
+		color: @black;
 		float: right;
+		background: url(../images/envelope.png) no-repeat;
+		background-position: 0 50%;
+		padding-left: 2em;
+
+		img {
+			padding: 0 12px;
+			line-height: 1em;
+		}
 	}
 }
 
 #soc-links {
-	margin-left: 0px;
-	float: right;
-	margin-top: 0;
-	width: 12%;
+	float: left;
+	width: 5.98%;
+	img {
+		display: block;
+		margin: 0 auto 1.923em 0;
+		opacity: 0.2;
 
+		&:hover {
+			.opacity();
+		}
+	}
 }
+
+// ------------- map -------------
+
 
 // ------------- footer -------------
 
 footer {
+	float: left;
 	width: 100%;
 	height: 350px;
 	background: @sea-green;

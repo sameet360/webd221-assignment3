@@ -326,6 +326,8 @@ header h5 {
   background-color: #0eb493;
 }
 #team {
+  width: 100%;
+  float: left;
   padding: 45px 0;
 }
 #team .pagination {
@@ -420,8 +422,9 @@ header h5 {
   margin-left: 0;
 }
 #facts {
-  padding: 4.231em 0;
   width: 100%;
+  float: left;
+  padding: 4.231em 0;
   height: 46.154em;
   background: url(../images/funfacts_rectangle.png) no-repeat;
   background-size: cover;
@@ -437,7 +440,6 @@ header h5 {
 .facts-column {
   margin-top: 1.77em;
   width: 25%;
-  display: inline-block;
   float: left;
   text-align: center;
 }
@@ -449,40 +451,39 @@ header h5 {
   font-size: 4.615em;
   color: #ffffff;
   font-weight: 500;
-  text-align: center;
 }
 .facts-column h5 {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
-  text-align: center;
 }
 #contact {
-  padding: 67px 0;
+  width: 100%;
+  float: left;
+  padding: 4.231em 0 5.5em 0;
 }
 #contact-header {
-  margin-top: 85px;
-  display: inline-block;
+  width: 100%;
+  margin-top: 6.538em;
+  float: left;
 }
 #location {
   float: left;
-  width: 28%;
-}
-#location p {
-  font-size: 13px;
+  width: 25.65%;
+  padding-right: 4.231em;
   color: #6a737b;
-  line-height: 24px;
-  font-weight: 600;
+  line-height: 1.846em;
 }
 #location h4 {
-  font-size: 18px;
-  color: #062033;
-  line-height: 32px;
+  margin-bottom: 1.818em;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.455em;
   text-align: left;
 }
 .form {
   float: left;
-  width: 70%;
+  width: 68.37%;
   text-align: center;
   padding-right: 30px;
 }
@@ -495,30 +496,63 @@ header h5 {
   text-transform: none;
 }
 .form input[type="text"] {
-  padding: 15px 0px;
-  width: 46%;
-  margin: 10px 10px 40px;
+  margin-top: 1.2em;
+  padding: 1.154em 0px;
   float: left;
   outline: none;
+  border: none;
   border-bottom: 1px solid #E0E0E0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+}
+.form input[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.2s 0.2s ease;
+  opacity: 0;
+}
+.form input[placeholder]:focus::-moz-input-placeholder {
+  transition: opacity 0.2s 0.2s ease;
+  opacity: 0;
+}
+.form #form-name {
+  width: 48.18%;
+  margin-right: 3.89%;
+}
+.form #form-email {
+  width: 47.92%;
+}
+.form #form-message {
+  margin-top: 2.308em;
+  width: 100%;
 }
 .form a {
-  padding: 80px 30px;
-  display: inline-block;
+  margin-top: 2.313em;
   font-size: 16px;
-  color: #000;
+  color: #000000;
   float: right;
+  background: url(../images/envelope.png) no-repeat;
+  background-position: 0 50%;
+  padding-left: 2em;
+}
+.form a img {
+  padding: 0 12px;
+  line-height: 1em;
 }
 #soc-links {
-  margin-left: 0px;
-  float: right;
-  margin-top: 0;
-  width: 12%;
+  float: left;
+  width: 5.98%;
+}
+#soc-links img {
+  display: block;
+  margin: 0 auto 1.923em 0;
+  opacity: 0.2;
+}
+#soc-links img:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 footer {
+  float: left;
   width: 100%;
   height: 350px;
   background: #21b697;
