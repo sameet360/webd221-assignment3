@@ -21,13 +21,13 @@
 			<a id="logo" href="#">Brandi</a>
 			<p><span id="divider"></span>I'm your tag line</p>
 			
-			<a id="right-panel-link" href="#right-panel">Open right panel</a>
+			<a id="right-panel-link" href="#menu"><i class="fa fa-bars"></i></a>
 			<ul id="menu" class="panel">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Works</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div><!-- /contain -->
 <!-- 		<div id="right-panel" class="panel">
@@ -174,91 +174,103 @@
 			<h5 class="subheading">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</h5>
 
 			<div class="team-column team-first">
-				<a href="#">
-					<div class="team-photo">
-						<img src="images/john.png" alt="John Filmr Doe's photo">
-						<div class="team-hover">
-							<strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong>
-							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+				<div class="team-photo">
+					<img src="images/john.png" alt="John Filmr Doe's photo">
+					<div class="team-hover">
 
-							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="facebook icon">
-								<img src="images/team-twit.png" alt="twitter icon">
-								<img src="images/team-gplus.png" alt="google plus icon">
-							</div>
-						</div>
-					</div>
-					<div style="clear: both;"></div> <!-- clear floats technique-->
+						<a href="#" class="team-info">
+							<p><strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong></p>
+							<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+						</a>
 
+						<div class="team-soc-link">
+							<a href="#"><img src="images/team-facebook.png" alt="facebook icon"></a>
+							<a href="#"><img src="images/team-twit.png" alt="twitter icon"></a>
+							<a href="#"><img src="images/team-gplus.png" alt="google plus icon"></a>
+						</div><!-- /team-soc-link -->
+					</div><!-- /team-hover -->
+				</div><!-- /team-photo -->
+				<div style="clear: both;"></div> <!-- clear floats technique-->
+
+				<a class="team-info" href="#">
 					<h5>John Filmr Doe</h5>
 					<p>Managing Director</p>
-				</a>
+				</a>	
 			</div><!-- /team-column -->
 
 			<div class="team-column even">
-				<a href="#">
-					<div class="team-photo">
-						<img src="images/team_image2.png" alt="Chystine Hineu's photo">
-						<div class="team-hover">
-							<strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong>
-							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+				<div class="team-photo">
+					<img src="images/team_image2.png" alt="Chystine Hineu's photo">
+					<div class="team-hover">
 
-							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="facebook icon">
-								<img src="images/team-twit.png" alt="twitter icon">
-								<img src="images/team-gplus.png" alt="google plus icon">
-							</div>
-						</div>
-					</div>
-					<div style="clear: both;"></div> <!-- clear floats technique-->
+						<a href="#" class="team-info">
+							<p><strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong><br>
+							sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>	
+						</a>
 
+						<div class="team-soc-link">
+							<a href="#"><img src="images/team-facebook.png" alt="facebook icon"></a>
+							<a href="#"><img src="images/team-twit.png" alt="twitter icon"></a>
+							<a href="#"><img src="images/team-gplus.png" alt="google plus icon"></a>
+						</div><!-- /team-soc-link -->
+					</div><!-- /team-hover -->
+				</div><!-- /team-photo -->
+				<div style="clear: both;"></div> <!-- clear floats technique-->
+
+				<a class="team-info" href="#">
 					<h5>Chystine Hineu</h5>
 					<p>Lead Designer</p>
-				</a>				
+				</a>	
 			</div><!-- /team-column -->
 
 			<div class="team-column">
-				<a href="#">
-					<div class="team-photo">
-						<img src="images/team_image3.png" alt="Martin Matrone's photo">
-						<div class="team-hover">
-							<strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong>
-							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+				<div class="team-photo">
+					<img src="images/team_image3.png" alt="Martin Matrone's photo">
+					<div class="team-hover">
 
-							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="facebok icon">
-								<img src="images/team-twit.png" alt="twitter icon">
-								<img src="images/team-gplus.png" alt="google plus icon">
-							</div>
-						</div>
-					</div>
-					<div style="clear: both;"></div> <!-- clear floats technique-->
+						<a href="#" class="team-info">
+							<p><strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong></p>
+							<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+						</a>
 
+						<div class="team-soc-link">
+							<a href="#"><img src="images/team-facebook.png" alt="facebook icon"></a>
+							<a href="#"><img src="images/team-twit.png" alt="twitter icon"></a>
+							<a href="#"><img src="images/team-gplus.png" alt="google plus icon"></a>
+						</div><!-- /team-soc-link -->
+					</div><!-- /team-hover -->
+				</div><!-- /team-photo -->
+				<div style="clear: both;"></div> <!-- clear floats technique-->
+
+				<a class="team-info" href="#">
 					<h5>Martin Matrone</h5>
 					<p>Lead Developer</p>
-				</a>	
+				</a>		
 			</div><!-- /team-column -->
 			
 			<div class="team-column even">
-				<a href="#">
-					<div class="team-photo">
-						<img src="images/team_image4.png" alt="Steve Flaulkin's photo">
-						<div class="team-hover">
-							<strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong>
-							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+				<div class="team-photo">
+					<img src="images/team_image4.png" alt="Steve Flaulkin's photo">
+					<div class="team-hover">
 
-							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="facebok icon">
-								<img src="images/team-twit.png" alt="twitter icon">
-								<img src="images/team-gplus.png" alt="google plus icon">
-							</div>
-						</div>
-					</div>
-					<div style="clear: both;"></div> <!-- clear floats technique-->
+						<a href="#" class="team-info">
+							<p><strong>Nemo enim ipsam <br> voluptatem quia voluptas</strong></p>
+							<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+						</a>
 
+						<div class="team-soc-link">
+							<a href="#"><img src="images/team-facebook.png" alt="facebook icon"></a>
+							<a href="#"><img src="images/team-twit.png" alt="twitter icon"></a>
+							<a href="#"><img src="images/team-gplus.png" alt="google plus icon"></a>
+						</div><!-- /team-soc-link -->
+					</div><!-- /team-hover -->
+				</div><!-- /team-photo -->
+				<div style="clear: both;"></div> <!-- clear floats technique-->
+
+				<a class="team-info" href="#">
 					<h5>Steve Flaulkin</h5>
 					<p>Sr. UI Designer</p>
-				</a>					
+				</a>							
 			</div><!-- /team-column -->
 			<div style="clear: both;"></div> <!-- clear floats technique-->
 
@@ -351,11 +363,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/jquery.panelslider.min.js"></script>
 <script>
-    $('#right-panel-link').panelslider({side: 'right', clickClose: true, duration: 200 });
+	$(document).ready(function() {
+		$('#right-panel-link').panelslider({side: 'right', clickClose: true, duration: 200 });
 
-    $('#close-panel-bt').click(function() {
-      $.panelslider.close();
-    });
+    	$('#menu li').click(function() {
+	      $.panelslider.close();
+	    });
+	    console.log( "ready!" );
+	});    
   </script>
 
 </body>
