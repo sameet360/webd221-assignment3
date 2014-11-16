@@ -221,8 +221,7 @@ header {
 	 }
 	
 	.pagination {
-		margin-top: 5.000em;
-		text-align: center;
+		.pagination();
 	}
 
 	.circle {
@@ -293,12 +292,13 @@ header {
 #works {
 	padding: 3.769em 0 0 0;
 	overflow: hidden;
+}
 
-	.contain h5 {
-		.bold();
-		opacity: 0.8;
-		width: 81%;
-	}
+.subheading {
+	margin: 1.4em auto 0 auto;
+	font-weight: 600;
+	opacity: 0.8;
+	width: 81%;
 }
 
 #categories {
@@ -323,7 +323,7 @@ header {
     }	
 }
 
-.work-gallery {
+#work-gallery {
 	width: @total-width;
 	list-style-type: none;
 	padding-left: 0;
@@ -348,11 +348,7 @@ header {
 			opacity: 0;
 
 			&:hover {
-				opacity: 1;
-				-webkit-transition: opacity 0.25s ease-in-out;
-				-moz-transition: opacity 0.25s ease-in-out;
-				-o-transition: opacity 0.25s ease-in-out;
-				transition: opacity 0.25s ease-in-out;
+				.opacity();
 			}
 
 			img {
@@ -362,9 +358,9 @@ header {
 			}
 
 			h5 {
-				.bold();
+				margin: 1.4em auto 0 auto;
+				font-weight: 600;
 				color: @white;
-				opacity: 1;
 			}
 
 			p {
@@ -389,55 +385,110 @@ header {
 
 #team{
 	padding: 45px 0;
+
+	.pagination {
+		.pagination();
+	}
+
+	.circle {
+		.circle();
+
+		display: inline-block;
+		border: 1px solid @text-color;
+
+		&:first-child,
+		&:hover {
+			background-color: @text-color;
+			opacity: 1;
+		}
+	}
 }
 
-#team-column {
-	margin-top: 65px;
-	width: 23%;
+.team-column {
+	float: left;
+	margin: 7.7em 0 0 2.45%;
+	width: 23.16%;
 	display: inline-block;
-	font-size: 20px;
-	padding-left: 28px;
+	text-align: center;
+	position: relative;
+
+		a {
+			width: 100%;
+			float: left;
+
+			&:hover > h5 {
+				color: @brand-color;
+			}		
+		}
 	 	
 	 	img {
 		 	width: 100%;
-		 	display: inline-block;
-		 	margin-right: 28px;
-		 	margin-bottom: 20px;
-		 	vertical-align: top;
+		 	float: left;
 		 }
 	
-		h5, p {
-			display: inline-block;
-			width: 100%;
-			text-align: center;
-			font-size: @dark;
-			font-weight: 400;			
-
-			p {
-				font-size: 13px;
-				width: 70%;
-				font-weight: 600;
-			}
+		h5 {
+			margin-top: 1.2em;
+			color: @dark;
+			font-weight: 400;	
 		}
+
+		
+}
+
+.team-photo {
+	display: block;
+	float: left;
+	width: 100%%;
+	position: relative;
+
+	&:hover > .team-hover {
+		.opacity();
 	}
 
-	.pagination {
-		//margin-top: 65px;
+	.team-hover {
+		display: block;
+		padding: 10% 5%;
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		background: rgba(14, 180, 147, 0.9);
 		text-align: center;
-
-		.circle {
-			.circle();
-
-			display: inline-block;
-			border: 1px solid @text-color;
-
-			&:first-child,
-			&:hover {
-				background-color: @text-color;
-				opacity: 1;
+		color: @white;
+		opacity: 0;
+		font-size: @font-size-h5 - 2;
+		line-height: 24px;
+			strong,
+			span {
+				margin-bottom: 1em;
+				display: block;
+				
 			}
-		}
+
+			.team-soc-link {
+				position: absolute;
+				bottom: 1.769em;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+
+			img {
+				width: 3.231em;
+				margin-right: 0.5em;
+				float: none;
+			}
+
+
+
 	}
+}
+
+.team-first {
+	margin-left: 0;
+}
+
+// ------------- facts -------------
 
 #facts {
 	padding: 55px 0;
