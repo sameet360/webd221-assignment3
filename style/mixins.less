@@ -1,25 +1,29 @@
 @import "variables.less";
 
+//section
 .section() {
-	width: 100%;
 	float: left;
+	width: 100%;
 }
 
+//pagination circles
 .circle() {
-	margin: 7px;
 	width: 8px;
 	height: 8px;
+	margin: 7px;
+	cursor: pointer;
+	background-color: transparent;
 	border-radius: 50%;
 	opacity: 0.2;
-	background-color: transparent;
-	cursor: pointer;
 }
 
+//pagination on the page
 .pagination() {
 	margin-top: 5.000em;
 	text-align: center;
 }
 
+//opacity hover effect
 .opacity() {
 	opacity: 1;
 	-webkit-transition: opacity 0.25s ease-in-out;

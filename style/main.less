@@ -36,29 +36,29 @@ h2 {
 }
 
 h3 {
+	margin-bottom: 20px;
 	font-size: @font-size-h3;
 	font-weight: 800;
 	color: @brand-color;
-	text-transform: uppercase;
 	text-align: center;
+	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	margin-bottom: 20px;
 }
 
 h4 {
 	margin: 0;
 	font-size: @font-size-h4;
-	color: @text-color;
 	font-weight: 600;
-	letter-spacing: -0.02em;
+	color: @text-color;
 	text-align: center;
+	letter-spacing: -0.02em;
 }
 
 h5 {
 	font-size: @font-size-h5;
 	font-weight: 300;
-	text-align: center;
 	color: @dark;
+	text-align: center;
 }
 
 a {
@@ -70,29 +70,29 @@ a {
 	margin: 0 auto;
 }
 
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
+.clearfix:after {
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	content: ".";
 }
 
 // ------------- navigation -------------
 
 nav {
-	height: 70px;
 	position: absolute;
 	width: @total-width;
+	height: 70px;
 	color: @bar-font-color;
-	background-color: @bar-color;
 	letter-spacing: 0.05em;
+	background-color: @bar-color;
  
 	p {
 		float: left;
-		opacity: 0.3;
-		font-weight: 300;
 		padding-top: 18px;
+		font-weight: 300;
+		opacity: 0.3;
 	}
 
 
@@ -105,48 +105,47 @@ nav {
 		padding: 30px 16px 0 16px;
 
 		&:hover {
-			border-top: 2px solid @cyan; 
 			padding-top: 28px;
+			border-top: 2px solid @cyan; 
 		}
 	}
 
 	#menu {
-		margin: 0;
 		display: inline;
 		float: right;
+		margin: 0;
 		list-style-type: none;
 	}
 }
 
 #logo {
 	display: block;
-	padding-top: 14px;
 	float: left;
+	padding-top: 14px;
 	font-family: @logo-font;
 	font-size: @logo-font-size;
-	letter-spacing: 0.05em;
 	color: @bar-font-color;
+	letter-spacing: 0.05em;
 }
 
 #divider {
+	float: left;
+	width: 1px;
+	height: 17px;
 	margin-right: 21px;
 	margin-left: 27px;
-	width: 1px;
-  	background-color: @cyan;
-  	height: 17px; 
-  	float: left; 
-
+	background-color: @cyan;
 }
 
 // ------------- header -------------
 
 header {
-	padding-top: 28.154em;
 	height: 61.538em;
-	background-image: url(../images/header.png);
-	background-size: cover;
+	padding-top: 28.154em;
 	color: @bar-font-color;
 	text-align: center;
+	background-image: url(../images/header.png);
+	background-size: cover;
 
 	.pagination {
 		float: right;
@@ -154,8 +153,8 @@ header {
 
 		.circle {
 			.circle();
-			border: 1px solid @bar-font-color;
 			display: block;
+			border: 1px solid @bar-font-color;
 
 			&:first-child,
 			&:hover {
@@ -174,8 +173,7 @@ header {
 		margin: 13px 16px;
 		font-size: 18px;
 		color: @bar-font-color;
-	}	
-
+	}
 }
 
 #highlight-text {
@@ -183,14 +181,14 @@ header {
 }
 
 .header-lines {
-	margin-left: 16px;
-	margin-right: 16px;
 	display: inline-block;
-	height: 1px;
 	width: 28px;
-	border: none;
+	height: 1px;
+	margin-right: 16px;
+	margin-left: 16px;
 	color: @brand-color;
 	background-color: @brand-color;
+	border: none;
 }
 
 .social-links {
@@ -213,12 +211,12 @@ header {
 	padding: 3.769em 0;
 	background-color: @bg-color;
 	 
-	 img {
-	 	width: 40px;
-	 	display: inline-block;
-	 	margin-right: 15px;
-	 	vertical-align: top;
-	 }
+	img {
+		display: inline-block;
+		width: 40px;
+		margin-right: 15px;
+		vertical-align: top;
+	}
 	
 	.pagination {
 		.pagination();
@@ -226,7 +224,6 @@ header {
 
 	.circle {
 		.circle();
-
 		display: inline-block;
 		border: 1px solid @text-color;
 
@@ -253,19 +250,19 @@ header {
 }
  
 .fa-heart-o {
-	width: 20px;
 	display: inline-block;
-	-webkit-text-stroke-width: 1px;
-	-moz-text-stroke-width: 1px;
-	text-stroke-width: 1px;
-	opacity: 0.2;
+	width: 20px;
 	margin: auto 10px;
+	opacity: 0.2;
+	text-stroke-width: 1px;
+	-moz-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 1px;
 }
 
 .feature-column {
-	margin-top: 5.000em;
-	width: 33.3%;
 	float: left;
+	width: 33.3%;
+	margin-top: 5.000em;
 
 	span {
 		width: 15.52%;
@@ -295,28 +292,28 @@ header {
 }
 
 .subheading {
+	width: 81%;
 	margin: 1.4em auto 0 auto;
 	font-weight: 600;
 	opacity: 0.8;
-	width: 81%;
 }
 
 #categories {
-	margin: 3.769em 3% 2.846em 0;
 	padding: 0;
+	margin: 3.769em 3% 2.846em 0;
+	text-align: center;
 	list-style: none;
-	text-align: center; 
 
 	a {
 		padding: 9px 21px;
-		color: @blue-dark;
-		font-weight: 700;
 		font-size: @font-size-base + 1;
-    }
+		font-weight: 700;
+		color: @blue-dark;
+	}
 
     a:hover {
-    	background: @mint;
     	color: @white;
+    	background: @mint;
     	-webkit-border-radius: 7px;
     	-moz-border-radius: 7px;
     	-o-border-radius: 7px;
@@ -324,27 +321,27 @@ header {
 }
 
 #work-gallery {
-	width: @total-width;
-	list-style-type: none;
-	padding-left: 0;
 	float: left;
+	width: @total-width;
+	padding-left: 0;
+	list-style-type: none;
 	
 	li {
-		display: block;
-		width: 25%;
-		float: left;
 		position: relative;
+		display: block;
+		float: left;
+		width: 25%;
 
 		a {
-			display: block;
-			padding: 25% 10%;
 			position: absolute;
 			z-index: 10;
+			display: block;
 			width: 100%;
 			height: 100%;
-			background: rgba(14, 180, 147, 0.9);
-			text-align: center;
+			padding: 25% 10%;
 			color: @white;
+			text-align: center;
+			background: rgba(14, 180, 147, 0.9);
 			opacity: 0;
 
 			&:hover {
@@ -370,12 +367,12 @@ header {
 	}
 	
 	.work-tile {
+		float: left;
 		width: 100%;
-	    float: left;
+	    
 	    &:hover	{
-	    	cursor: pointer;
 	    	z-index: 3;
-			
+	    	cursor: pointer;
 			background-color: @brand-color;
 		}
 	}
@@ -393,7 +390,6 @@ header {
 
 	.circle {
 		.circle();
-
 		display: inline-block;
 		border: 1px solid @text-color;
 
@@ -406,25 +402,25 @@ header {
 }
 
 .team-column {
-	float: left;
-	margin: 7.7em 0 0 2.45%;
-	width: 23.16%;
-	display: inline-block;
-	text-align: center;
 	position: relative;
+	display: inline-block;
+	float: left;
+	width: 23.16%;
+	margin: 7.7em 0 0 2.45%;
+	text-align: center;
 
 	a {
-		width: 100%;
 		float: left;
-
+		width: 100%;
+		
 		&:hover > h5 {
 			color: @brand-color;
 		}		
 	}
  	
  	img {
+ 		float: left;
 	 	width: 100%;
-	 	float: left;
 	 }
 
 	h5 {
@@ -435,48 +431,47 @@ header {
 }
 
 .team-photo {
+	position: relative;
 	display: block;
 	float: left;
 	width: 100%%;
-	position: relative;
 
 	&:hover > .team-hover {
 		.opacity();
 	}
 
 	.team-hover {
-		display: block;
-		padding: 10% 5%;
 		position: absolute;
 		z-index: 10;
+		display: block;
 		width: 100%;
 		height: 100%;
-		background: rgba(14, 180, 147, 0.9);
-		text-align: center;
-		color: @white;
-		opacity: 0;
+		padding: 10% 5%;
 		font-size: @font-size-h5 - 2;
 		line-height: 24px;
+		color: @white;
+		text-align: center;
+		background: rgba(14, 180, 147, 0.9);
+		opacity: 0;
 
 		strong,
 		span {
-			margin-bottom: 1em;
 			display: block;
-			
+			margin-bottom: 1em;
 		}
 
 		.team-soc-link {
 			position: absolute;
+			right: 0;
 			bottom: 1.769em;
 			left: 0;
-			right: 0;
 			margin: 0 auto;
 		}
 
 		img {
+			float: none;
 			width: 3.231em;
 			margin-right: 0.5em;
-			float: none;
 		}
 	}
 }
@@ -489,8 +484,8 @@ header {
 
 #facts {
 	.section();
-	padding: 4.231em 0;
 	height: 46.154em;
+	padding: 4.231em 0;
 	background: url(../images/funfacts_rectangle.png) no-repeat;
 	background-size: cover;
 
@@ -506,9 +501,9 @@ header {
 }
 
 .facts-column {
-	margin-top: 1.77em;
-	width: 25%;
 	float: left;
+	width: 25%;
+	margin-top: 1.77em;
 	text-align: center;
 
 	img {
@@ -518,14 +513,14 @@ header {
 	h2 {
 		margin-top: 0.5em;
 		font-size: 4.615em;
-		color: @white;
 		font-weight: 500;
+		color: @white;
 	}
 
 	h5 {
+		font-weight: 400;
 		color: @white;
 		text-transform: uppercase;
-		font-weight: 400;
 	}
 }
 
@@ -537,17 +532,17 @@ header {
 }
 
 #contact-header {
+	float: left;
 	width: 100%;
 	margin-top: 6.538em;
-	float: left;
 }
 
 #location {
 	float: left;
 	width: 25.65%;
 	padding-right: 4.231em;
-	color: @dark-grey;
 	line-height: 1.846em;
+	color: @dark-grey;
 
 	h4 {
 		margin-bottom: 1.818em;
@@ -561,35 +556,35 @@ header {
 .form {
 	float: left;
 	width: 68.37%;
-	text-align: center;
 	padding-right: 30px;
+	text-align: center;
 	
 	h3 {
-		font-size: @font-size-h3 - 4;
-		text-align: left;
 		margin-top: 0;
-		color: @dark;
+		font-size: @font-size-h3 - 4;
 		font-weight: 600;
+		color: @dark;
+		text-align: left;
 		text-transform: none;
 	}
 
 	input[type="text"] {
-		margin-top: 1.2em;
-		padding: 1.154em 0px;
 		float: left;
-		outline: none;
+		padding: 1.154em 0px;
+		margin-top: 1.2em;
 		border: none;
 		border-bottom: 1px solid #E0E0E0;
+		outline: none;
 	}
 
-	input[placeholder]:focus::-webkit-input-placeholder, {
-		transition: opacity 0.2s 0.2s ease; 
+	input[placeholder]:focus::-webkit-input-placeholder {
 		opacity: 0;
+		transition: opacity 0.2s 0.2s ease; 
 	}
 
-	input[placeholder]:focus::-moz-input-placeholder, {
-		transition: opacity 0.2s 0.2s ease; 
+	input[placeholder]:focus::-moz-input-placeholder {
 		opacity: 0;
+		transition: opacity 0.2s 0.2s ease;
 	}
 
 	#form-name {
@@ -607,17 +602,21 @@ header {
 	}
 
 	a {
+		float: right;
+		padding-left: 2em;
 		margin-top: 2.313em;
 		font-size: @font-size-base + 3;
 		color: @black;
-		float: right;
 		background: url(../images/envelope.png) no-repeat;
 		background-position: 0 50%;
-		padding-left: 2em;
 
 		img {
 			padding: 0 12px;
 			line-height: 1em;
+		}
+
+		&:hover {
+			color: lighten(@black, 50%);
 		}
 	}
 }
@@ -625,6 +624,7 @@ header {
 #soc-links {
 	float: left;
 	width: 5.98%;
+
 	img {
 		display: block;
 		margin: 0 auto 1.923em 0;
@@ -638,112 +638,117 @@ header {
 
 // ------------- map -------------
 
+#map {
+	.section();
+	height: 16.538em;
+	background: url(../images/map.png) no-repeat;
+	background-size: cover;
+}
 
 // ------------- footer -------------
 
 footer {
-	float: left;
-	width: 100%;
-	height: 350px;
-	background: @sea-green;
+	.section();
+	padding: 5.000em 0 7.000em 0;
 	color: @white;
+	background-color: @sea-green;
+	border-top: 5px solid @dark;
 }
 
-.footer-column:first-child {
-	display: block;
-	padding: 46px 0 40px 0;
+
+.footer-description {
 	float: left;
-	width: 25%;
+	width: 25.64%;
+	padding-right: 3.84%;
 	
 	h3 {
 		font-family: @logo-font;
-		text-transform: none;
 		color: @white;
 		text-align: left;
+		text-transform: none;
 	}
 
 	p {
-		line-height: 24px;
+		line-height: 1.846em;
 	}
 }
 
-.footer-column:nth-child(2) {
-	width: 25%;
-	padding: 70px 0 40px 0;
-	display: block;
+.footer-subscription {
 	float: left;
+	width: 25.72%;
+	padding-right: 2.56%;
+
+	h6 {
+		margin: 3em 0;
+		font-size: @font-size-h6 - 2;
+	}
 
 	input[type="email"] {
-		background: none;
-		padding:9px;
 		width: 100%;
+		padding: 9px;
+		background: none;
 		border: 2px solid @white;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
+		outline: none;
 		-o-border-radius: 4px;
-	}
-
-	h6 {
-		font-size: @font-size-base;
-		color: @white;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
 	}
 
 	p {
-		line-height: 24px;
+		line-height: 1.846em;
 	}
 }
 
-.footer-column:nth-child(3) {
-	width: 25%;
-	padding: 70px 0 40px 0;
+.footer-links {
 	float: left;
-	
+	width: 25.55%;
+
 	h6 {
+		margin: 3em 0 1.35em 0;
+		font-size: @font-size-h6 - 2;
 		font-weight: 600;
-		font-size: @font-size-base;
-		margin-bottom: 8px;
-	}
-	
-	li {
-		float: left;
-		list-style-type: none;
 	}
 
-	#list1{
+	ul {
 		float: left;
 		width: 48%;
 		padding-left: 4px;
 		line-height: 32px;
-		
+		list-style-type: none;
+	}
+	
+	a {
+		color: @white;
 	}
 
-	#list2 {
-		float: left;
-		padding-right: 10px;
-		width: 48%;
-		line-height: 32px;
+}
+
+.footer-rights {
+	float: left;
+	width: 23.07%;
+	padding: 7.846em 3.84% 0 0;
+
+	p {
+		padding-left: 15px;
+		line-height: 1.846em;
+		border-left: 1px solid rgba(6, 32, 51, 0.3);
 	}
 
- }
+	.fa-heart-o {
+		margin: 0 3px;
+		color: @black;
+		opacity: 0.3;
+	}
 
- .footer-column:last-child {
- 	width: 25%;
- 	padding: 128px 0 40px 0;
- 	float: left;
- 	display: block;
+	a {
+		color: @dark;
+	}
 
- 	p {
- 		line-height: 24px;
- 	}
-
- 	a {
- 		color: @dark;
- 	}
-
- 	#copyright {
- 		color: @dark;
- 		margin-top: 50px;
- 	}
- }
+	#copyright {
+		margin-top: 3.846em;
+		color: @dark;
+		border: none;
+	}
+}
 
 

@@ -26,26 +26,7 @@
 		</div><!-- /contain -->
 	</nav>
 
-	<header id="header">
-		<ul class="pagination">
-			<li class="circle"></li>
-			<li class="circle"></li>
-			<li class="circle"></li>
-		</ul><!-- /pagination -->
-
-		<div class="contain">
-			<h1>Meet <b>Brandi</b>!</h1>
-			<h2><span id="highlight-text">/creative</span> one page template.</h2>
-			<hr class="header-lines"><h5>We are a team of professionals</h5><hr class="header-lines">
-
-			<div class="social-links">
-				<img src="images/twitter.png" alt="twitter social icon">
-				<img src="images/facebook.png" alt="facebook social icon">
-				<img src="images/google.png" alt="google plus social icon">
-				<img src="images/dribbble.png" alt="dribble social icon">
-			</div><!-- /social-links -->
-		</div><!-- /contain -->
-	</header>
+	<?php include('header.php'); ?>
 	
 	<section id="features">
 		<div class="contain">
@@ -106,66 +87,66 @@
 
 		<ul id="work-gallery">
 			<li>
-				<img class="work-tile" src="images/image1.png" alt="">
+				<img class="work-tile" src="images/image1.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image2.png" alt="">
+				<img class="work-tile" src="images/image2.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image2.jpg" alt="">
+				<img class="work-tile" src="images/image2.jpg" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image4.png" alt="">
+				<img class="work-tile" src="images/image4.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 
 			<li>
-				<img class="work-tile" src="images/image5.png" alt="">
+				<img class="work-tile" src="images/image5.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image6.png" alt="">
+				<img class="work-tile" src="images/image6.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image7.png" alt="">
+				<img class="work-tile" src="images/image7.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
 			</li>
 			<li>
-				<img class="work-tile" src="images/image8.png" alt="">
+				<img class="work-tile" src="images/image8.png" alt="piece of work">
 				<a href="#" class="gallery-link">
-					<img src="images/eye-icon.png" alt=""/>
+					<img src="images/eye-icon.png" alt="eye icon"/>
 					<h5>Lorem ipsum dolor sit amet.</h5>
 					<p>Photography</p>
 				</a><!-- /gallery-link -->
@@ -190,9 +171,9 @@
 							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
 
 							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="">
-								<img src="images/team-twit.png" alt="">
-								<img src="images/team-gplus.png" alt="">
+								<img src="images/team-facebook.png" alt="facebook icon">
+								<img src="images/team-twit.png" alt="twitter icon">
+								<img src="images/team-gplus.png" alt="google plus icon">
 							</div>
 						</div>
 					</div>
@@ -212,9 +193,9 @@
 							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
 
 							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="">
-								<img src="images/team-twit.png" alt="">
-								<img src="images/team-gplus.png" alt="">
+								<img src="images/team-facebook.png" alt="facebook icon">
+								<img src="images/team-twit.png" alt="twitter icon">
+								<img src="images/team-gplus.png" alt="google plus icon">
 							</div>
 						</div>
 					</div>
@@ -234,9 +215,9 @@
 							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
 
 							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="">
-								<img src="images/team-twit.png" alt="">
-								<img src="images/team-gplus.png" alt="">
+								<img src="images/team-facebook.png" alt="facebok icon">
+								<img src="images/team-twit.png" alt="twitter icon">
+								<img src="images/team-gplus.png" alt="google plus icon">
 							</div>
 						</div>
 					</div>
@@ -256,9 +237,9 @@
 							<span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
 
 							<div class="team-soc-link">
-								<img src="images/team-facebook.png" alt="">
-								<img src="images/team-twit.png" alt="">
-								<img src="images/team-gplus.png" alt="">
+								<img src="images/team-facebook.png" alt="facebok icon">
+								<img src="images/team-twit.png" alt="twitter icon">
+								<img src="images/team-gplus.png" alt="google plus icon">
 							</div>
 						</div>
 					</div>
@@ -286,25 +267,25 @@
 			</div><!-- /shapes -->
 
 			<div class="facts-column">
-				<img src="images/clock.png" alt="">
+				<img src="images/clock.png" alt="clock icon">
 				<h2>3200</h2>
 				<h5>hours of work</h5>
 			</div><!-- /facts-column -->
 
 			<div class="facts-column">
-				<img src="images/clients.png" alt="">
+				<img src="images/clients.png" alt="friends icon">
 				<h2>120</h2>
 				<h5>Satisfied Clients</h5>
 			</div><!-- /facts-column -->
 
 			<div class="facts-column">
-				<img src="images/projects.png" alt="">
+				<img src="images/projects.png" alt="project icon">
 				<h2>360</h2>
 				<h5>Projects Delivered</h5>
 			</div><!-- /facts-column -->
 
 			<div class="facts-column">
-				<img src="images/awards.png" alt="">
+				<img src="images/awards.png" alt="awards icon">
 				<h2>42</h2>
 				<h5>Awards Won</h5>
 			</div><!-- /facts-column -->
@@ -354,42 +335,7 @@
 
 	<section id="map"></section>
 
-	<footer>
-		<div class="contain">
-			<div class="footer-column">
-				<h3>Brandi</h3>
-				<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div><!-- /.footer-column -->
+	<?php include('footer.php'); ?>
 
-			<div class="footer-column">
-				<h6>Subscribe</h6>
-				<input type="email">
-				<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			</div><!-- /.footer-column -->
-
-			<div class="footer-column">
-				<h6>Explore</h6>
-				<ul id="list1">
-					<li>Envato</li>
-					<li>Themecurve</li>
-					<li>Kreativeshowcase</li>
-					<li>Freebiescurve</li>
-				</ul>
-
-				<ul id="list2">
-					<li>Envato</li>
-					<li>Themecurve</li>
-					<li>Kreativeshowcase</li>
-					<li>Freebiescurve</li>
-				</ul>
-			</div><!-- /.footer-column -->
-			<div class="footer-column">
-				<p>Created with <i></i> by <a href="">themecurve</a>,
-				exclusive for kreativeshowcase</p>
-
-				<p id="copyright">2014 Brandi. All Rights Reserved.</p>
-			</div><!-- /.footer-column -->
-		</div>
-	</footer>
 </body>
 </html>
