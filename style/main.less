@@ -107,6 +107,7 @@ nav {
 		&:hover {
 			padding-top: 28px;
 			border-top: 2px solid @cyan; 
+			cursor: pointer;
 		}
 	}
 
@@ -186,9 +187,9 @@ header {
 	height: 1px;
 	margin-right: 16px;
 	margin-left: 16px;
-	color: @brand-color;
 	background-color: @brand-color;
 	border: none;
+	vertical-align: middle;
 }
 
 .social-links {
@@ -305,6 +306,7 @@ header {
 	list-style: none;
 
 	a {
+		display: inline-block;
 		padding: 9px 21px;
 		font-size: @font-size-base + 1;
 		font-weight: 700;
@@ -434,7 +436,7 @@ header {
 	position: relative;
 	display: block;
 	float: left;
-	width: 100%%;
+	width: 100%;
 
 	&:hover > .team-hover {
 		.opacity();
@@ -553,7 +555,7 @@ header {
 	}
 }
 
-.form {
+#form {
 	float: left;
 	width: 68.37%;
 	padding-right: 30px;
@@ -686,7 +688,8 @@ footer {
 	input[type="email"] {
 		width: 100%;
 		padding: 9px;
-		background: none;
+		background: url(../images/arrow.png) no-repeat;
+		background-position: 95% 50%;
 		border: 2px solid @white;
 		outline: none;
 		-o-border-radius: 4px;
@@ -719,6 +722,10 @@ footer {
 	
 	a {
 		color: @white;
+
+		&:hover {
+			color: @dark;
+		}
 	}
 
 }

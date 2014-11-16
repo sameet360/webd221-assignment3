@@ -1,0 +1,218 @@
+@media (max-width: 1280px) {
+  #work-gallery li a {
+    padding: 10%;
+  }
+  #team .subheading {
+    margin-bottom: 2.5em;
+  }
+  .team-column {
+    width: 48.7%;
+    margin: 1em 0;
+  }
+  .even {
+    margin-left: 2.6%;
+  }
+  .footer-description,
+  .footer-subscription,
+  .footer-links,
+  .footer-rights {
+    width: 50%;
+  }
+  .footer-rights {
+    padding-top: 6em;
+  }
+}
+@media (max-width: 1000px) {
+  .contain {
+    width: 95%;
+  }
+  header {
+    height: 43.538em;
+    padding-top: 11.154em;
+  }
+  header h1 {
+    font-size: 56px;
+  }
+  header h2 {
+    font-size: 41px;
+  }
+  #features,
+  #works,
+  #team,
+  #facts,
+  #contact,
+  footer {
+    padding: 1em 0;
+  }
+  #features img {
+    margin-right: 0;
+  }
+  .feature-column span {
+    width: 100%;
+    display: block;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .feature-column article {
+    width: 91.6%;
+  }
+  .feature-column article h4 {
+    text-align: center;
+  }
+  #work-gallery li {
+    width: 33.333%;
+  }
+}
+@media (max-width: 768px) {
+  nav #menu {
+    display: none;
+    width: 220px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    z-index: 500;
+  }
+  nav #menu li {
+    display: block;
+  }
+  nav #menu li:hover {
+    border: none;
+    padding-top: 30px;
+  }
+  #work-gallery li {
+    width: 50%;
+  }
+  #facts {
+    height: 30.154em;
+  }
+  #facts h2 {
+    font-size: 3em;
+  }
+  #facts h5 {
+    font-size: 0.95em;
+  }
+  #contact-header {
+    margin: 3em 0;
+  }
+  #location {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 1em;
+  }
+  #location h4 {
+    text-align: center;
+  }
+  #form {
+    width: 94.02%;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    height: 30.538em;
+    padding-top: 5.154em;
+  }
+  header h1 {
+    font-size: 38px;
+    margin-bottom: 0.3em;
+  }
+  header h2 {
+    font-size: 26px;
+  }
+  header h4 {
+    font-size: 14px;
+  }
+  header .social-links {
+    margin-top: 2em;
+  }
+  .feature-column {
+    width: 100%;
+    margin-top: 2em;
+    text-align: center;
+  }
+  #form {
+    width: 100%;
+    padding-right: 0;
+  }
+  #soc-links {
+    width: 100%;
+    margin-top: 3em;
+  }
+  #soc-links a {
+    float: left;
+    margin-right: 3em;
+  }
+  #soc-links img {
+    margin: 0;
+  }
+  .footer-description,
+  .footer-subscription,
+  .footer-links,
+  .footer-rights {
+    width: 100%;
+  }
+  .footer-subscription h6,
+  .footer-links h6 {
+    font-size: 23px;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .footer-links ul {
+    width: 50%;
+    line-height: 45px;
+    text-align: center;
+  }
+  .footer-rights {
+    padding-top: 2em;
+    text-align: center;
+  }
+  .footer-rights #copyright {
+    margin-top: 1em;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
+@media (max-width: 486px) {
+  header {
+    height: 30.538em;
+    padding-top: 5.154em;
+  }
+  header h1 {
+    font-size: 31px;
+    margin-bottom: 0.8em;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header h5 {
+    font-size: 13px;
+  }
+  header .social-links {
+    margin-top: 2em;
+  }
+  header .social-links img {
+    margin-left: 35px;
+  }
+  #categories a {
+    padding: 9px 11px;
+    font-size: 15px;
+  }
+  #work-gallery li {
+    width: 100%;
+  }
+  .team-column {
+    width: 100%;
+    margin: 0;
+  }
+  #facts {
+    height: 48em;
+  }
+  .facts-column {
+    margin-top: 3em;
+    width: 50%;
+  }
+}

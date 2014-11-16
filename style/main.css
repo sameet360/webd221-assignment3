@@ -87,6 +87,7 @@ nav li {
 nav li:hover {
   padding-top: 28px;
   border-top: 2px solid #32b0ee;
+  cursor: pointer;
 }
 nav #menu {
   display: inline;
@@ -157,9 +158,9 @@ header h5 {
   height: 1px;
   margin-right: 16px;
   margin-left: 16px;
-  color: #0eb493;
   background-color: #0eb493;
   border: none;
+  vertical-align: middle;
 }
 .social-links {
   margin-top: 8.692em;
@@ -260,6 +261,7 @@ header h5 {
   list-style: none;
 }
 #categories a {
+  display: inline-block;
   padding: 9px 21px;
   font-size: 14px;
   font-weight: 700;
@@ -378,7 +380,7 @@ header h5 {
   position: relative;
   display: block;
   float: left;
-  width: 100%%;
+  width: 100%;
 }
 .team-photo:hover > .team-hover {
   opacity: 1;
@@ -481,13 +483,13 @@ header h5 {
   line-height: 1.455em;
   text-align: left;
 }
-.form {
+#form {
   float: left;
   width: 68.37%;
   padding-right: 30px;
   text-align: center;
 }
-.form h3 {
+#form h3 {
   margin-top: 0;
   font-size: 24px;
   font-weight: 600;
@@ -495,7 +497,7 @@ header h5 {
   text-align: left;
   text-transform: none;
 }
-.form input[type="text"] {
+#form input[type="text"] {
   float: left;
   padding: 1.154em 0px;
   margin-top: 1.2em;
@@ -503,26 +505,26 @@ header h5 {
   border-bottom: 1px solid #E0E0E0;
   outline: none;
 }
-.form input[placeholder]:focus::-webkit-input-placeholder {
+#form input[placeholder]:focus::-webkit-input-placeholder {
   opacity: 0;
   transition: opacity 0.2s 0.2s ease;
 }
-.form input[placeholder]:focus::-moz-input-placeholder {
+#form input[placeholder]:focus::-moz-input-placeholder {
   opacity: 0;
   transition: opacity 0.2s 0.2s ease;
 }
-.form #form-name {
+#form #form-name {
   width: 48.18%;
   margin-right: 3.89%;
 }
-.form #form-email {
+#form #form-email {
   width: 47.92%;
 }
-.form #form-message {
+#form #form-message {
   margin-top: 2.308em;
   width: 100%;
 }
-.form a {
+#form a {
   float: right;
   padding-left: 2em;
   margin-top: 2.313em;
@@ -531,11 +533,11 @@ header h5 {
   background: url(../images/envelope.png) no-repeat;
   background-position: 0 50%;
 }
-.form a img {
+#form a img {
   padding: 0 12px;
   line-height: 1em;
 }
-.form a:hover {
+#form a:hover {
   color: #808080;
 }
 #soc-links {
@@ -595,7 +597,8 @@ footer {
 .footer-subscription input[type="email"] {
   width: 100%;
   padding: 9px;
-  background: none;
+  background: url(../images/arrow.png) no-repeat;
+  background-position: 95% 50%;
   border: 2px solid #ffffff;
   outline: none;
   -o-border-radius: 4px;
@@ -623,6 +626,9 @@ footer {
 }
 .footer-links a {
   color: #ffffff;
+}
+.footer-links a:hover {
+  color: #062033;
 }
 .footer-rights {
   float: left;

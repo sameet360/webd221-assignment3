@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta author="name" content="Anna S. & Sowjanya S.">
+	<meta name="author" content="Anna S. & Sowjanya S.">
+
 	<title>Brandi | Digital Agency</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href='style/normalize.css'>
 	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/media-queries.css">
 </head>
 <body>
 	<nav>
 		<div class="contain">
 			<a id="logo" href="#">Brandi</a>
 			<p><span id="divider"></span>I'm your tag line</p>
-
-			<ul id="menu">
+			
+			<a id="right-panel-link" href="#right-panel">Open right panel</a>
+			<ul id="menu" class="panel">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Features</a></li>
 				<li><a href="#">Works</a></li>
@@ -24,6 +30,11 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div><!-- /contain -->
+<!-- 		<div id="right-panel" class="panel">
+		    <h2>Right panel</h2>
+		    <p>Clicking outside this panel wont close it because <code>clickClose = false</code></p>
+		    <button id="close-panel-bt">Close</button>
+		</div> -->
 	</nav>
 
 	<?php include('header.php'); ?>
@@ -184,7 +195,7 @@
 				</a>
 			</div><!-- /team-column -->
 
-			<div class="team-column">
+			<div class="team-column even">
 				<a href="#">
 					<div class="team-photo">
 						<img src="images/team_image2.png" alt="Chystine Hineu's photo">
@@ -228,7 +239,7 @@
 				</a>	
 			</div><!-- /team-column -->
 			
-			<div class="team-column">
+			<div class="team-column even">
 				<a href="#">
 					<div class="team-photo">
 						<img src="images/team_image4.png" alt="Steve Flaulkin's photo">
@@ -311,9 +322,9 @@
 					ww.brandi.com</p>
 				</div><!-- /location -->
 
-				<div class="form">
+				<div id="form">
 					<h3>Say hello!</h3>
-					<form action="">
+					<form>
 						<input type="text" id="form-name" placeholder="Name">
 						<input type="text" id="form-email" placeholder="Email">
 						<input type="text" id="form-message" placeholder="Message">
@@ -336,6 +347,16 @@
 	<section id="map"></section>
 
 	<?php include('footer.php'); ?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.panelslider.min.js"></script>
+<script>
+    $('#right-panel-link').panelslider({side: 'right', clickClose: true, duration: 200 });
+
+    $('#close-panel-bt').click(function() {
+      $.panelslider.close();
+    });
+  </script>
 
 </body>
 </html>
