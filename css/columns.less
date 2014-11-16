@@ -1,0 +1,21 @@
+/* grid styles */
+
+// 1200px grid
+@column-width: 100;
+@gutter-width: 0;
+@columns: 12;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px;
+
+// Set @total-width to 100% for a fluid layout
+@total-width: @gridsystem-width;
+@total-width: 100%;
+
+.column(@x,@columns:@columns) {
+	display: inline;
+	float: left;
+	width: @total-width*(((@gutter-width+@column-width)*@x) / @gridsystem-width);
+	/*padding: 5px 30px 5px 5px;*/
+}
+
