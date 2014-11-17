@@ -1,0 +1,31 @@
+// COLORS
+//------------------------------------
+@blue: 					#4bcaff;
+@blue-grey: 			#515f67;
+@blue-grey-dark:      	#353f46;
+@white: 			   	#ffffff;
+
+// TYPOGRAPHY
+//------------------------------------
+@font: "PT Sans", Myriad, Myriad Pro, Helvetica, Arial, sans-serif;
+
+@base-font-size: 13px;
+@h2-font-size: @base-font-size + 25; // 38
+@h3-font-size: @base-font-size + 17; // 30
+@h4-font-size: @base-font-size + 11; // 24
+@sub-head: @base-font-size + 8; //20
+
+// GRID VALUES
+//------------------------------------
+// Change this values to change the size of the grid
+
+// 1180px grid width
+@column-width: 70;
+@gutter-width: 30;
+@columns: 12;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px; // = 1680
+
+// Set @total-width to 100% for a fluid layout
+@total-width: 100%;
