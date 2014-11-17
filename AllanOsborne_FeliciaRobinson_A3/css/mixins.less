@@ -1,0 +1,12 @@
+
+// STEP 4: 
+// GRID MIXIN - To create page layouts based on the grid, create a mixin that incorporates the grid column & gutter sizes. The mixin will be a reusable chunk of code for setting the widths of the elements based on the number of columns needed for the desired layout. Columns are floated left so they can sit side by side.
+
+
+// Set the width based on number of columns of the grid
+.column(@x,@columns:@columns) {
+	display: inline;
+	float: left;
+	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+	margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+} 
