@@ -1,0 +1,14 @@
+/* for clearing any floats <br class=&quot;clearfloat&quot; /> */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* for vertical aligning anything */
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
